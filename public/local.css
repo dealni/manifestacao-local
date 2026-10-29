@@ -1,0 +1,126 @@
+/* A single row cannot fit the brand plus account/store controls at 360 px. */
+@media (max-width: 640px) and (orientation: portrait) {
+  body:not(.playing) .topbar {
+    height: calc(112px + env(safe-area-inset-top));
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 6px;
+    padding: calc(8px + env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 8px
+      max(12px, env(safe-area-inset-left));
+  }
+
+  body:not(.playing) .topbar .top-actions {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  body:not(.playing) .topbar .top-actions > * {
+    flex-shrink: 0;
+  }
+
+  body:not(.playing) #welcome {
+    padding-top: calc(118px + env(safe-area-inset-top));
+  }
+}
+
+/* Reserve the desktop chat column for its controls and messages. */
+@media (min-width: 761px) and (pointer: fine) {
+  body.playing:not(.mobile-hud) #hud-tools {
+    right: calc(28px + 290px + 16px);
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1200px) and (pointer: fine) {
+  body.playing:not(.mobile-hud) #hud-tools {
+    right: calc(18px + 250px + 16px);
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) and (pointer: fine) {
+  body.playing:not(.mobile-hud) #hud-tools {
+    right: calc(18px + 245px + 16px);
+  }
+}
+
+/* Entry and account forms can open before the mobile HUD is initialized.
+   Keep their text legible without triggering Safari's input focus zoom. */
+@media (max-width: 760px), (pointer: coarse) {
+  body :is(dialog, #welcome, #hud) :is(input, select, textarea) {
+    font-size: 16px;
+  }
+
+  /* viewport-fit=cover includes the notch area, especially in landscape. */
+  body dialog[open],
+  body.mobile-hud dialog[open] {
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    max-width: calc(
+      100vw - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))
+    );
+    overscroll-behavior: contain;
+  }
+
+  dialog .dialog-close:not(.primary) {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Keep every header action reachable when the full desktop toolbar is wider
+   than a tablet or small laptop. Account controls stay at the start. */
+@media (max-width: 1200px) {
+  body .topbar {
+    gap: 10px;
+  }
+
+  body .topbar .brand {
+    flex-shrink: 0;
+  }
+
+  body .topbar .top-actions {
+    min-width: 0;
+    max-width: 100%;
+    flex-shrink: 1;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 2px;
+  }
+
+  body .topbar .top-actions > * {
+    flex-shrink: 0;
+  }
+
+  body .topbar .account-top {
+    order: -3;
+  }
+
+  body .topbar .points-top {
+    order: -2;
+  }
+
+  body .topbar #social-open {
+    order: -1;
+  }
+}
+
+/* Entry actions outside .entry-card need the same comfortable touch targets
+   as the customization controls. Keep keyboard focus clear of fixed chrome. */
+body:not(.playing) #welcome :is(button, summary, a) {
+  scroll-margin-block: 132px 24px;
+}
+
+body:not(.playing) #welcome .entry-launch .account-open,
+body:not(.playing) #welcome .access-pack summary {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+/* Native details retains its marker while making the whole row tappable. */
+body:not(.playing) #welcome .access-pack summary {
+  align-content: center;
+  padding-block: 10px;
+}

@@ -1,0 +1,16 @@
+[Unit]
+Description=Backup privado do banco e uploads do Manifestacao
+After=postgresql.service
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+UMask=0077
+ExecStart=/opt/manifestacao-local/current/deploy/backup.sh
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+PrivateTmp=true
+ProtectHome=true
+NoNewPrivileges=true

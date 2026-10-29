@@ -1,0 +1,310 @@
+/* Focus and controls follow Apple HIG accessibility and button guidance.
+   The 44px minimum is scoped to forms and dialogs, not movement controls. */
+body :is(button, a, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid #fff2bd;
+  outline-offset: 3px;
+}
+
+body :is(.character, .shirts label, .look-option, .side, .server):has(input:focus-visible) {
+  outline: 3px solid #fff2bd;
+  outline-offset: 3px;
+}
+
+body :is(dialog, .entry-card) :is(button, a.primary) {
+  min-height: 44px;
+}
+
+/* O microfone é contextual e precisa continuar acessível com Ações recolhido. */
+body.playing #hud .palanque-onair:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  width: min(420px, calc(100vw - 24px));
+  max-height: calc(100dvh - 220px);
+  overflow-y: auto;
+  border: 1px solid #9eb38b77;
+  border-radius: 16px;
+  background: #102a20f5;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  pointer-events: auto;
+  animation: none;
+  z-index: 20;
+}
+
+body #hud .palanque-onair > span {
+  flex-basis: 100%;
+  overflow-wrap: anywhere;
+}
+
+body #hud .palanque-onair > button {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #bdcc9f88;
+  border-radius: 10px;
+  background: #254e38;
+  color: #fff7d7;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+body #hud .palanque-onair > .palanque-button {
+  flex-basis: 100%;
+  font-weight: 800;
+}
+
+body #hud .palanque-onair > button[aria-pressed='true'] {
+  background: #a31b29;
+  border-color: #ffb4ab;
+}
+
+body #hud .palanque-onair > button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+@media (max-width: 760px), (pointer: coarse) {
+  body.mobile-hud.playing #hud .palanque-onair:not([hidden]) {
+    top: max(76px, calc(env(safe-area-inset-top) + 60px));
+    bottom: auto;
+    max-height: calc(100dvh - var(--mobile-bottom, 80px) - 120px);
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body.mobile-hud.playing #hud .palanque-onair:not([hidden]) {
+    top: max(60px, calc(env(safe-area-inset-top) + 54px));
+    width: min(360px, calc(100vw - 160px));
+    max-height: calc(100dvh - 150px);
+    padding: 8px;
+  }
+}
+
+body
+  dialog
+  :is(
+    .dialog-close,
+    .sc-close,
+    .skin-close,
+    .mission-close,
+    .graphics-close,
+    .race-close,
+    .debate-close
+  ):not(.primary):not([hidden]) {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #f7f3e9;
+  flex-shrink: 0;
+}
+
+/* Header and character preview actions keep a consistent touch target while
+   the header retains its existing horizontal overflow on narrow screens. */
+body .topbar button,
+body .preview-tools button {
+  min-width: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+body dialog > h2 {
+  padding-inline-end: 36px;
+}
+
+body
+  :is(dialog, .entry-card)
+  :is(
+    input:not([type='radio']):not([type='checkbox']):not([type='range']):not([type='color']):not(
+        [type='file']
+      ):not([type='hidden']),
+    select,
+    textarea
+  ) {
+  box-sizing: border-box;
+  min-height: 44px;
+  max-width: 100%;
+  border-color: #84998d;
+  border-radius: 10px;
+  color: #f7f3e9;
+}
+
+body :is(dialog, .entry-card) :is(input, textarea)::placeholder {
+  color: #bdc9c1;
+  opacity: 1;
+}
+
+body.side-left :is(dialog, .entry-card) :is(input, textarea)::placeholder {
+  color: #dbbdb8;
+}
+
+body :is(dialog, .entry-card) :is(input, select, textarea)[aria-invalid='true'] {
+  border: 2px solid #ffb4ab;
+}
+
+body :is(.sc-error, .sign-shop-error) {
+  color: #ffb4ab;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+body .login-mail-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+body :is(.skin-filters button, .skin-preview-toggle, .graphics-options .graphics-device summary) {
+  min-height: 44px;
+}
+
+/* Search and messaging controls live outside native dialogs. */
+body :is(.social-find, .social-compose) :is(input, button) {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+body :is(dialog, .entry-card) button:disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 760px), (pointer: coarse) {
+  body :is(dialog, .entry-card, .social-find, .social-compose) :is(input, select, textarea) {
+    font-size: 16px;
+  }
+
+  body dialog[open] {
+    /* Center inside the usable area: a height limit alone still lets a tall
+       dialog overlap an asymmetric notch or home-indicator inset. */
+    top: max(12px, env(safe-area-inset-top));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    max-height: calc(
+      100dvh - max(12px, env(safe-area-inset-top)) - max(12px, env(safe-area-inset-bottom))
+    );
+    overscroll-behavior: contain;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Keep timed progress bars intact; remove decorative entrance/pulse/spin. */
+  body
+    :is(
+      .au-overlay,
+      .au-spinner,
+      .sc-card,
+      .palanque-dot,
+      .palanque-onair,
+      .action-popover,
+      .race-flash,
+      .spray-buy.out,
+      .deck-button,
+      .telao-top,
+      .app-install
+    ),
+  body .game-activities .race-button::before,
+  body .telao-pay.busy::before,
+  body .telao-spin::before {
+    animation: none;
+  }
+
+  body .skin-card:hover img {
+    transform: none;
+  }
+}
+
+@media (forced-colors: active) {
+  body :is(button, a, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline-color: Highlight;
+  }
+
+  body :is(dialog, .entry-card) :is(input, select, textarea)[aria-invalid='true'] {
+    border-style: dashed;
+  }
+}
+
+/* Overrides the compact HUD's more specific 40px pass style. */
+body.mobile-hud.playing .topbar :is(.premium-top, .passes-top),
+body.mobile-hud.playing .mission-current {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* This action has no archived theme rule; native button gray hides its light text. */
+body .held-store {
+  --held-store-surface: #142d23;
+  --held-store-text: #cfdbcb;
+}
+
+body :is(#welcome, #style-picker) .look-editor .held-store {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #84998d;
+  border-radius: 10px;
+  background: var(--held-store-surface);
+  color: var(--held-store-text);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+body :is(#welcome, #style-picker) .look-editor .held-store:hover:enabled {
+  background: color-mix(in srgb, var(--held-store-surface), white 8%);
+}
+
+body :is(#welcome, #style-picker) .look-editor .held-store:active:enabled {
+  background: color-mix(in srgb, var(--held-store-surface), white 14%);
+}
+
+body :is(#welcome, #style-picker) .look-editor .held-store:disabled {
+  color: var(--held-store-text);
+  cursor: not-allowed;
+}
+
+body.side-left .held-store {
+  --held-store-surface: #32171c;
+  --held-store-text: #ead8d5;
+}
+
+body.side-missao .held-store {
+  --held-store-surface: #292513;
+  --held-store-text: #e4dec6;
+}
+
+/* Track names are choices, so keep the full label readable before selecting. */
+body .som-panel .som-tracks button {
+  min-height: 44px;
+  height: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+}
+
+body .som-panel :is(.som-item button, .som-now button, .som-mute, .som-close, [data-som-global]),
+body .som-panel .som-equipment > summary {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+body .som-panel [data-som-global] {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #ffffff10;
+  color: #f7f3e9;
+  padding: 8px 11px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  white-space: normal;
+}
+
+body .som-panel .som-equipment > summary {
+  padding-block: 12px;
+}

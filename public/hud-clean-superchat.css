@@ -1,0 +1,87 @@
+/* Superchat continua acessível pela barra superior, pelo chat e pelo menu. */
+.sc-bar[hidden],
+.sc-bar.sc-dialog-open {
+  display: none !important;
+}
+/* Histórico e cartão podem aparecer juntos, inclusive em paisagem. */
+.sc-bar {
+  max-height: max(0px, calc(100dvh - var(--clean-notice-top, var(--sc-top, 84px)) - 12px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  pointer-events: auto;
+}
+.sc-bar .sc-peek {
+  box-sizing: border-box;
+  max-height: min(180px, 30dvh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.sc-bar .sc-card {
+  box-sizing: border-box;
+  width: min(320px, calc(100vw - 32px));
+  max-width: 100%;
+  max-height: calc(100dvh - var(--clean-notice-top, 84px) - 12px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  pointer-events: auto;
+  padding: 10px 12px 13px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.sc-bar .sc-card .sc-card-head {
+  font-size: 12px;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.sc-bar .sc-card > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 5px 0;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.sc-bar .sc-card.sc-expanded > p {
+  display: block;
+  max-height: min(180px, 30dvh);
+  overflow: auto;
+  pointer-events: auto;
+  -webkit-line-clamp: unset;
+  white-space: pre-wrap;
+}
+.sc-bar .sc-card .sc-details {
+  display: block;
+  pointer-events: auto;
+  min-height: 32px;
+  padding: 4px 6px;
+  margin: 3px 0 0;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.sc-bar .sc-card .sc-details:focus-visible,
+.sc-bar .sc-card > p:focus-visible,
+.sc-bar .sc-peek:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sc-bar .sc-card {
+    animation: none;
+  }
+}
+.sc-bar .sc-card .sc-staff {
+  margin: 4px 0;
+}
+@media (pointer: coarse), (max-width: 760px) {
+  .sc-bar .sc-card .sc-details {
+    min-height: 44px;
+  }
+}

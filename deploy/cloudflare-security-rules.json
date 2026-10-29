@@ -1,0 +1,32 @@
+{
+  "zone_settings": {
+    "min_tls_version": "1.2"
+  },
+  "http_request_firewall_custom": [
+    {
+      "action": "block",
+      "description": "Manifestacoes: bloquear arquivos privados e sondagens sem uso no jogo",
+      "enabled": true,
+      "expression": "(http.host in {\"manifestacoes.com\" \"www.manifestacoes.com\"} and (starts_with(lower(http.request.uri.path), \"/.env\") or starts_with(lower(http.request.uri.path), \"/.git/\") or lower(http.request.uri.path) eq \"/.git\" or lower(http.request.uri.path) eq \"/wp-login.php\" or starts_with(lower(http.request.uri.path), \"/wp-admin/\") or lower(http.request.uri.path) eq \"/xmlrpc.php\"))",
+      "ref": "manifestacao_sensitive_paths"
+    }
+  ],
+  "http_ratelimit": [
+    {
+      "action": "block",
+      "description": "Manifestacoes: ate 30 requisicoes de autenticacao por IP em 10 segundos",
+      "enabled": true,
+      "expression": "starts_with(http.request.uri.path, \"/api/auth/\")",
+      "ratelimit": {
+        "characteristics": [
+          "cf.colo.id",
+          "ip.src"
+        ],
+        "mitigation_timeout": 10,
+        "period": 10,
+        "requests_per_period": 30
+      },
+      "ref": "manifestacao_auth_rate"
+    }
+  ]
+}

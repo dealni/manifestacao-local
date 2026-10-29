@@ -1,0 +1,862 @@
+{
+  "places": [
+    {
+      "id": "wind-plant",
+      "name": "Usina de Estocar Vento",
+      "description": "Capture o vento nos tanques e libere uma rajada quando estiverem cheios.",
+      "x": 216,
+      "z": -540,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 178,
+        "z": -540,
+        "w": 46,
+        "d": 4
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 14,
+          "d": 12
+        },
+        {
+          "x": 0,
+          "z": 9,
+          "w": 1.3,
+          "d": 0.65
+        }
+      ],
+      "actions": [
+        {
+          "key": "capture",
+          "label": "Armazenar vento",
+          "x": 0,
+          "z": 11,
+          "radius": 3
+        },
+        {
+          "key": "release",
+          "label": "Liberar a rajada",
+          "x": 0,
+          "z": 11,
+          "radius": 3
+        }
+      ]
+    },
+    {
+      "id": "bottle-factory",
+      "name": "Escola da Mamadeira de Piroca",
+      "description": "Uma fábrica absurda inspirada na fake news eleitoral de 2018. Acione a esteira para produzir mamadeiras.",
+      "x": 216,
+      "z": -420,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": -447,
+        "w": 4,
+        "d": 26
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 14,
+          "d": 10
+        },
+        {
+          "x": -10,
+          "z": -2,
+          "w": 2.4,
+          "d": 2.4
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 12,
+          "d": 2.4
+        }
+      ],
+      "actions": [
+        {
+          "key": "produce",
+          "label": "Ligar a esteira",
+          "x": 0,
+          "z": 11,
+          "radius": 3
+        }
+      ]
+    },
+    {
+      "id": "country-house",
+      "name": "Sítio de Atibaia",
+      "description": "Explore o quintal e encontre documentos, uma pasta e uma chave. Caça aos objetos em um cenário satírico.",
+      "x": 216,
+      "z": -360,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 178,
+        "z": -360,
+        "w": 46,
+        "d": 4
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 12,
+          "d": 9
+        },
+        {
+          "x": -10,
+          "z": 1,
+          "w": 1.3,
+          "d": 1
+        },
+        {
+          "x": 9,
+          "z": -7,
+          "w": 1.3,
+          "d": 1
+        },
+        {
+          "x": 10,
+          "z": 7,
+          "w": 1.3,
+          "d": 1
+        }
+      ],
+      "actions": [
+        {
+          "key": "start-search",
+          "label": "Começar a busca",
+          "x": 0,
+          "z": 7,
+          "radius": 2.5
+        },
+        {
+          "key": "collect-0",
+          "label": "Examinar os documentos",
+          "x": -10,
+          "z": 2.8,
+          "radius": 2
+        },
+        {
+          "key": "collect-1",
+          "label": "Examinar a pasta",
+          "x": 9,
+          "z": -5.2,
+          "radius": 2
+        },
+        {
+          "key": "collect-2",
+          "label": "Pegar a chave",
+          "x": 10,
+          "z": 8.8,
+          "radius": 2
+        }
+      ]
+    },
+    {
+      "id": "triplex",
+      "name": "Triplex do Guarujá",
+      "description": "Escolha um andar e entre no elevador. Ele sempre para em outro andar antes de voltar ao térreo.",
+      "x": 216,
+      "z": -120,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": -143,
+        "w": 4,
+        "d": 22
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 12,
+          "d": 10
+        },
+        {
+          "x": 8.7,
+          "z": 4.5,
+          "w": 0.15,
+          "d": 2.7
+        },
+        {
+          "x": 11.3,
+          "z": 4.5,
+          "w": 0.15,
+          "d": 2.7
+        },
+        {
+          "x": 10,
+          "z": 3.2,
+          "w": 2.7,
+          "d": 0.15
+        }
+      ],
+      "actions": [
+        {
+          "key": "lift-3",
+          "label": "Ir ao 3º andar",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        },
+        {
+          "key": "lift-6",
+          "label": "Ir ao 6º andar",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        },
+        {
+          "key": "lift-9",
+          "label": "Ir ao 9º andar",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        },
+        {
+          "key": "leave-ride",
+          "label": "Sair do elevador",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        }
+      ]
+    },
+    {
+      "id": "temple",
+      "name": "Templo do Imbrochável",
+      "description": "Ative o altar no pátio para receber 10 segundos de invencibilidade. Uma bênção por minuto.",
+      "x": 216,
+      "z": -60,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 178,
+        "z": -60,
+        "w": 46,
+        "d": 4
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 12,
+          "d": 10
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 2.4,
+          "d": 2.4
+        },
+        {
+          "x": -3.9,
+          "z": 5,
+          "w": 0.16,
+          "d": 0.16
+        },
+        {
+          "x": 3.9,
+          "z": 5,
+          "w": 0.16,
+          "d": 0.16
+        }
+      ],
+      "actions": [
+        {
+          "key": "blessing",
+          "label": "Receber a proteção",
+          "x": 0,
+          "z": 10.5,
+          "radius": 2.6
+        }
+      ]
+    },
+    {
+      "id": "alien",
+      "name": "Base do ET Bilu",
+      "description": "Busquem conhecimento: resolva os três enigmas do visitante para ganhar fichas fictícias.",
+      "x": 216,
+      "z": 180,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 153,
+        "w": 4,
+        "d": 54
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -1,
+          "w": 8,
+          "d": 8
+        },
+        {
+          "x": -2,
+          "z": 7,
+          "w": 0.8,
+          "d": 0.5
+        },
+        {
+          "x": 2,
+          "z": 6,
+          "w": 5,
+          "d": 0.15
+        }
+      ],
+      "actions": [
+        {
+          "key": "ask-riddle",
+          "label": "Ouvir os enigmas",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        },
+        {
+          "key": "answer-0",
+          "label": "Resposta 1",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        },
+        {
+          "key": "answer-1",
+          "label": "Resposta 2",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        },
+        {
+          "key": "answer-2",
+          "label": "Resposta 3",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "tire-camp",
+      "name": "Acampamento dos Pneus",
+      "description": "Dois pneus gigantes viraram portais. Viaje até a usina de vento ou a Base do ET Bilu.",
+      "x": 216,
+      "z": 240,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 269,
+        "w": 4,
+        "d": 58
+      },
+      "solid": [
+        {
+          "x": -6,
+          "z": 4,
+          "w": 1.5,
+          "d": 4
+        },
+        {
+          "x": 6,
+          "z": -4,
+          "w": 1.5,
+          "d": 4
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 9,
+          "d": 0.2
+        },
+        {
+          "x": -9,
+          "z": -2,
+          "w": 0.5,
+          "d": 1.1
+        },
+        {
+          "x": -5,
+          "z": -7,
+          "w": 0.5,
+          "d": 1.1
+        },
+        {
+          "x": 7,
+          "z": 8,
+          "w": 0.5,
+          "d": 1.1
+        }
+      ],
+      "actions": [
+        {
+          "key": "travel-north",
+          "label": "Pneu para a usina de vento",
+          "x": -8,
+          "z": 4,
+          "radius": 2.5
+        },
+        {
+          "key": "travel-et",
+          "label": "Pneu para a Base do ET",
+          "x": 8,
+          "z": -4,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "liberty",
+      "name": "Estátua da Liberdade da Havan",
+      "description": "Desperte a estátua e enfrente o boss cooperativo. Aproxime-se para golpear e recue da onda dourada. Só participantes sofrem dano nos HP dos desafios.",
+      "x": 216,
+      "z": 360,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 376,
+        "w": 4,
+        "d": 32
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 8.6,
+          "d": 8.6
+        },
+        {
+          "x": -9,
+          "z": 5,
+          "w": 5,
+          "d": 0.2
+        }
+      ],
+      "actions": [
+        {
+          "key": "wake-boss",
+          "label": "Participar do desafio",
+          "x": 0,
+          "z": 8,
+          "radius": 3
+        },
+        {
+          "key": "strike-boss",
+          "label": "Golpear a estátua",
+          "x": 0,
+          "z": 3.5,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "supermarket",
+      "name": "Supermercado da Picanha e Cerveja",
+      "description": "Encontre a picanha lendária na vitrine do pátio. Ela restaura seus HP dos desafios, uma vez por minuto.",
+      "x": 216,
+      "z": 480,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 493,
+        "w": 4,
+        "d": 26
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 14,
+          "d": 11
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 4,
+          "d": 1.8
+        }
+      ],
+      "actions": [
+        {
+          "key": "eat-picanha",
+          "label": "Comer a picanha lendária",
+          "x": 0,
+          "z": 10.5,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "name": "Banco do Pix",
+      "description": "Cada transferência de uma ficha fictícia ativa um evento aleatório: bônus de fichas, cura, proteção ou confete. Não movimenta dinheiro real.",
+      "x": 216,
+      "z": 540,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 528,
+        "w": 4,
+        "d": 24
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 11,
+          "d": 12
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 1.5,
+          "d": 1
+        }
+      ],
+      "actions": [
+        {
+          "key": "transfer-token",
+          "label": "Transferir 1 ficha fictícia",
+          "x": 0,
+          "z": 10,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "congress",
+      "name": "Congresso do Centrão",
+      "description": "Use 3 fichas fictícias como emenda para abrir as portas. Explore o pátio e encontre uma recompensa; ninguém fica preso quando o portão fecha.",
+      "x": -216,
+      "z": -420,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": -216,
+        "z": -433,
+        "w": 4,
+        "d": 26
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -6,
+          "w": 12,
+          "d": 10.4
+        },
+        {
+          "x": -5,
+          "z": 7,
+          "w": 0.2,
+          "d": 8
+        },
+        {
+          "x": 5,
+          "z": 7,
+          "w": 0.2,
+          "d": 8
+        },
+        {
+          "x": 0,
+          "z": 3,
+          "w": 10,
+          "d": 0.2
+        },
+        {
+          "x": -3.1,
+          "z": 11,
+          "w": 3.8,
+          "d": 0.2
+        },
+        {
+          "x": 3.1,
+          "z": 11,
+          "w": 3.8,
+          "d": 0.2
+        },
+        {
+          "x": 0,
+          "z": 6.5,
+          "w": 1.2,
+          "d": 0.8
+        }
+      ],
+      "actions": [
+        {
+          "key": "open-gate",
+          "label": "Abrir com 3 fichas de emenda",
+          "x": 0,
+          "z": 12.8,
+          "radius": 1.5
+        },
+        {
+          "key": "collect-emenda",
+          "label": "Examinar o cofre de emendas",
+          "x": 0,
+          "z": 8.5,
+          "radius": 1.4
+        }
+      ]
+    },
+    {
+      "id": "whale-pool",
+      "name": "Piscina da Baleia",
+      "description": "Uma piscina gigante escondida, uma baleia na superfície e o Bolsonaro dando voltas de jet ski. Aproxime-se da borda para observar.",
+      "x": -220,
+      "z": -360,
+      "w": 70,
+      "d": 60,
+      "alley": {
+        "x": -216,
+        "z": -312,
+        "w": 4,
+        "d": 36
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": 0,
+          "w": 62,
+          "d": 50
+        },
+        {
+          "x": 22,
+          "z": 27,
+          "w": 8,
+          "d": 0.16
+        }
+      ],
+      "actions": [
+        {
+          "key": "watch-whale",
+          "label": "Ver a baleia de perto",
+          "x": 0,
+          "z": 27,
+          "radius": 4
+        }
+      ]
+    },
+    {
+      "id": "chair-plaza",
+      "name": "Praça da Cadeira",
+      "description": "Acione o lançador mirando com a direção do personagem. Cadeiras voadoras só atingem participantes com PvP ativo; paredes e proteção bloqueiam os golpes.",
+      "x": -216,
+      "z": 180,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": -216,
+        "z": 190,
+        "w": 4,
+        "d": 20
+      },
+      "solid": [
+        {
+          "x": -7,
+          "z": 4,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": 7,
+          "z": 4,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": -7,
+          "z": -5,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": 7,
+          "z": -5,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": 0,
+          "z": -4,
+          "w": 2.8,
+          "d": 2.8
+        },
+        {
+          "x": 3,
+          "z": 8,
+          "w": 1,
+          "d": 0.8
+        },
+        {
+          "x": -4.8,
+          "z": 10,
+          "w": 0.16,
+          "d": 0.16
+        },
+        {
+          "x": 4.8,
+          "z": 10,
+          "w": 0.16,
+          "d": 0.16
+        }
+      ],
+      "actions": [
+        {
+          "key": "launch-chair",
+          "label": "Acionar o lançador de cadeiras",
+          "x": 0,
+          "z": 8,
+          "radius": 2.5
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "id": "primeiras-marcas",
+      "title": "Além do Eixo",
+      "description": "Explore a pé ou de carro e desça para usar o spray nas ruas laterais, a pelo menos 80 m do centro da avenida. Pinte 22 ou 13 com o molde do spray.",
+      "minutes": 20,
+      "reward": "moto",
+      "goals": {
+        "travel": 2000,
+        "remoteAreas": 4,
+        "marks": 2
+      }
+    },
+    {
+      "id": "abrindo-caminho",
+      "title": "Abrindo caminho",
+      "description": "Dirija pela cidade e derrube pessoas com colisões de verdade. A mesma pessoa só conta de novo após 2 minutos.",
+      "minutes": 22,
+      "reward": "pillow",
+      "goals": {
+        "drive": 4000,
+        "vehicleHits": 20
+      }
+    },
+    {
+      "id": "circuito-bairros",
+      "title": "Circuito dos bairros",
+      "description": "Leve sua moto por novas ruas. Desça para pintar áreas diferentes e deixar números com o spray.",
+      "minutes": 25,
+      "reward": "chopper",
+      "goals": {
+        "drive": 5500,
+        "remoteAreas": 8,
+        "marks": 4
+      }
+    },
+    {
+      "id": "primeiro-podio",
+      "title": "Primeiro pódio",
+      "description": "Complete o percurso passando por todos os arcos e vença uma corrida. Também pratique com os objetos já liberados.",
+      "minutes": 25,
+      "reward": "foam",
+      "goals": {
+        "raceFinishes": 2,
+        "raceWins": 1,
+        "meleeHits": 15
+      }
+    },
+    {
+      "id": "bandeiras-alto",
+      "title": "Bandeiras ao alto",
+      "description": "Volte às ruas laterais, espalhe sua arte e percorra a região a pé.",
+      "minutes": 28,
+      "reward": "flags-basic",
+      "goals": {
+        "remoteAreas": 10,
+        "marks": 6,
+        "walk": 2000
+      }
+    },
+    {
+      "id": "peso-pesado",
+      "title": "Peso pesado",
+      "description": "Faça um longo circuito de veículo e derrube pessoas pelo caminho. Colisões fracas e pessoas já caindo não contam.",
+      "minutes": 30,
+      "reward": "carreta",
+      "goals": {
+        "drive": 8500,
+        "vehicleHits": 45
+      }
+    },
+    {
+      "id": "minha-assinatura",
+      "title": "Minha assinatura",
+      "description": "Pinte longe da avenida em muitos pontos e crie sua marca pela cidade. Os desenhos personalizados continuam passando pela moderação.",
+      "minutes": 30,
+      "reward": "designs",
+      "goals": {
+        "remoteAreas": 12,
+        "marks": 10,
+        "walk": 2200
+      }
+    },
+    {
+      "id": "som-de-rua",
+      "title": "Som de rua",
+      "description": "Cruze a cidade, participe das corridas e some novas colisões para conquistar sua caixa de som.",
+      "minutes": 35,
+      "reward": "caixa",
+      "goals": {
+        "drive": 10000,
+        "raceFinishes": 2,
+        "vehicleHits": 60
+      }
+    },
+    {
+      "id": "na-frente",
+      "title": "Na frente do pelotão",
+      "description": "Conquiste vários pódios e domine o percurso. Vencer sozinho conta, mas exige completar todos os arcos.",
+      "minutes": 38,
+      "reward": "carro-som",
+      "goals": {
+        "raceWins": 2,
+        "raceFinishes": 4,
+        "drive": 14000
+      }
+    },
+    {
+      "id": "dono-das-ruas",
+      "title": "Dono das ruas",
+      "description": "O desafio máximo do som: vença, explore, pinte e acumule colisões ao longo de uma grande jornada.",
+      "minutes": 40,
+      "reward": "caminhao-som",
+      "goals": {
+        "raceWins": 3,
+        "raceFinishes": 6,
+        "vehicleHits": 100,
+        "remoteAreas": 14,
+        "drive": 18000
+      }
+    },
+    {
+      "id": "colecao-completa",
+      "title": "Coleção da avenida",
+      "description": "Feche a jornada com vitórias, números pelo bairro e encontros físicos. Libera as bandeiras Premium restantes dos dois lados.",
+      "minutes": 40,
+      "reward": "flags-all",
+      "goals": {
+        "marks": 18,
+        "raceWins": 3,
+        "vehicleHits": 100,
+        "meleeHits": 45
+      }
+    }
+  ]
+}

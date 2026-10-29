@@ -1,0 +1,51 @@
+/* Dica contextual temporária; os controles e a ajuda continuam acessíveis. */
+.mobile-control-hint[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 760px), (pointer: coarse) {
+  /* Uma faixa única, medida com o conteúdo real, inclusive ao girar a tela. */
+  body.playing
+    :is(
+      #connection,
+      #toast,
+      .race-guidance,
+      .sc-bar,
+      .palanque-live,
+      .peace-zone-badge,
+      .mobile-control-hint
+    ) {
+    position: fixed;
+    top: var(--clean-notice-top, calc(env(safe-area-inset-top, 0px) + 72px));
+    bottom: auto;
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    width: auto;
+    max-width: none;
+    margin: 0;
+    transform: none;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    font-size: 12px;
+    line-height: 1.35;
+    padding: 7px 10px;
+  }
+  body.playing #connection {
+    z-index: 10010;
+  }
+  body.playing #toast {
+    z-index: 10009;
+  }
+  body.playing .race-guidance {
+    z-index: 10008;
+  }
+  body.playing .mobile-control-hint {
+    max-width: calc(100vw - 32px);
+    pointer-events: none;
+  }
+}
+
+/* A ajuda móvel usa a dica temporária e o menu Como jogar. */
+body.mobile-hud #movement-tip {
+  display: none !important;
+}

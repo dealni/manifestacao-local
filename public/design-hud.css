@@ -1,0 +1,85 @@
+/* Atividades ficam nas opções, sem cartões permanentes sobre o cenário. */
+#graphics-options .game-activities {
+  position: static;
+  display: grid;
+  width: 100%;
+  gap: 8px;
+}
+
+#graphics-options .game-activities > button:not([hidden]) {
+  position: static;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+}
+
+#graphics-options .game-activities .mission-button:not([hidden]) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #f4d97955;
+  border-radius: 12px;
+  background: #132326;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+#graphics-options .game-activities .mission-button:hover:enabled {
+  background: #203438;
+}
+
+#graphics-options .game-activities .mission-button:focus-visible {
+  outline: 3px solid #fff2bd;
+  outline-offset: 3px;
+}
+
+#graphics-options .game-activities .mission-button:disabled {
+  opacity: 1;
+  border-style: dashed;
+  cursor: not-allowed;
+}
+
+@media (forced-colors: active) {
+  #graphics-options .game-activities .mission-button:focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+#graphics-options .game-activities .mission-current {
+  display: none !important;
+}
+
+/* Zoom em janelas de pouca altura. */
+@media (min-width: 761px) and (max-height: 500px) {
+  body.playing:not(.mobile-hud) #hud-tools {
+    top: 64px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+/* O mapa usa o canvas vivo também no menu móvel; não há cópia desatualizada. */
+body.mobile-hud .mobile-sheet .map-panel {
+  display: block;
+  position: static;
+  inset: auto;
+  transform: none;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+body.mobile-hud .mobile-sheet #minimap {
+  display: block;
+  /* A caixa clicável acompanha o bitmap 256 × 180, inclusive em paisagem. */
+  width: min(100%, calc(max(120px, 100dvh - 180px) * 256 / 180));
+  height: auto;
+  margin-inline: auto;
+}

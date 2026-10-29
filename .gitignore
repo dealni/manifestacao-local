@@ -1,0 +1,27 @@
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.dump
+*.sql
+*.tar.gz
+coverage/
+.artifacts/
+.cache/
+data/*
+!data/catalog.json
+!data/music-tracks.json
+!data/media-screens.json
+!data/brasilia-layout.json
+!data/brasilia-model-assets.json
+# Somente fontes e fixtures públicas necessárias à reprodução do cliente.
+analysis/*
+!analysis/original-index.html
+!analysis/inventario-original.json
+!analysis/brasilia-baseline.json
+!analysis/client-readable.js
+*.log
+.DS_Store

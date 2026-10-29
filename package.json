@@ -1,0 +1,54 @@
+{
+  "name": "manifestacao-local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jogo multijogador em Brasília com cliente adaptado e servidor local",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node scripts/quality/unit-tests.mjs",
+    "prepare-client": "node scripts/prepare-client.js",
+    "check:assets": "node scripts/verify-assets.js",
+    "check": "npm run check:complexity && npm run test:quality && npm run check:runtime && npm run lint && npm run typecheck && npm run format:check && npm run check:syntax && npm run check:generated && npm run check:assets && npm run test:coverage",
+    "prepare": "lefthook install",
+    "check:runtime": "node scripts/quality/check-runtime.mjs",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "node node_modules/@typescript/native/bin/tsc --project tsconfig.checkjs.json && node node_modules/@typescript/native/bin/tsc --project tsconfig.quality.json",
+    "format:check": "node scripts/quality/format.mjs --check",
+    "format": "node scripts/quality/format.mjs --write",
+    "check:syntax": "node scripts/quality/check-syntax.mjs",
+    "check:generated": "node scripts/quality/check-generated.mjs",
+    "test:coverage": "node scripts/quality/test-coverage.mjs",
+    "test:postgres": "node scripts/quality/postgres-integration.mjs",
+    "test:browser": "playwright test",
+    "check:all": "npm run check && npm run test:postgres && npm run test:browser",
+    "check:complexity": "node scripts/quality/check-complexity.ts && node scripts/quality/check-function-size.ts",
+    "complexity:baseline": "node scripts/quality/check-complexity.ts --atualizar-baseline && node scripts/quality/check-function-size.ts --atualizar-baseline",
+    "test:quality": "node --test scripts/quality/check-complexity.test.ts scripts/quality/check-function-size.test.ts"
+  },
+  "dependencies": {
+    "pg": "8.23.1",
+    "sharp": "0.35.5",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.19.2",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "lefthook": "2.2.2",
+    "prettier": "3.9.10",
+    "typescript": "npm:@typescript/typescript6@6.0.2"
+  },
+  "engines": {
+    "node": ">=24.22.1 <25",
+    "npm": ">=12.2.1 <13"
+  },
+  "packageManager": "npm@12.2.1",
+  "allowScripts": {
+    "lefthook@2.2.2": false
+  }
+}

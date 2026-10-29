@@ -1,0 +1,28 @@
+{
+  "_leia": "Escrito por scripts/quality/check-complexity.ts. Somente tamanho e complexidade. Regrave com `npm run complexity:baseline`, não edite à mão.",
+  "tamanho": {
+    "limiares": {
+      "linhas": 500,
+      "complexidade": 15
+    },
+    "por_arquivo": {},
+    "por_funcao": {},
+    "arquivos": 164,
+    "linhas": 24936,
+    "maior_arquivo": {
+      "caminho": "scripts/quality/check-complexity.ts",
+      "linhas": 488
+    },
+    "arquivos_grandes": 0,
+    "funcoes": 1655,
+    "maior_funcao": {
+      "caminho": "scripts/ambient-audio.js",
+      "nome": "update",
+      "identidade": "FunctionDeclaration:createAmbientAudioController/MethodDeclaration:update",
+      "linha": 85,
+      "complexidade": 15
+    },
+    "funcoes_complexas": 0,
+    "medido_em": "2026-10-29"
+  }
+}

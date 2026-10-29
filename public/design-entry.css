@@ -1,0 +1,483 @@
+/* Entry typography and hierarchy. Preserve the avenue's green/gold identity.
+   Scope to the welcome screen so the game's HUD keeps its own density. */
+body:not(.playing) #welcome {
+  --entry-secondary: #cfdbcb;
+  --entry-tertiary: #b7c9b4;
+  --entry-surface: #142d23;
+  text-rendering: optimizeLegibility;
+}
+
+body:not(.playing) #welcome :is(h1, h2, h3) {
+  text-wrap: balance;
+}
+
+body:not(.playing) #welcome :is(#entry-title, #team-title) {
+  font-size: clamp(1.25rem, 1.7vw, 1.625rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+body:not(.playing) #welcome #entry-title {
+  margin: 0 0 10px;
+}
+
+body:not(.playing) #welcome .entry-card > .entry-scroll > .muted {
+  max-width: 52ch;
+  margin: 0 0 24px;
+  color: var(--entry-secondary);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+body:not(.playing) #welcome :is(.step, .no-account, .eyebrow, .input-label) {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.055em;
+}
+
+body:not(.playing) #welcome :is(.nick-hint, .entry-legal, .preview-hint) {
+  color: var(--entry-tertiary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+body:not(.playing) #welcome .character-name {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+body:not(.playing) #welcome :is(.character-price, .side-count) {
+  font-size: 0.6875rem;
+  line-height: 1.4;
+}
+
+body:not(.playing) #welcome .entry-footer {
+  flex-wrap: wrap;
+  color: var(--entry-tertiary);
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  letter-spacing: 0.035em;
+}
+
+body:not(.playing) #welcome .load-status {
+  color: var(--entry-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+body:not(.playing) #welcome .stage-heading > p:last-child {
+  max-width: 38ch;
+  color: var(--entry-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+body:not(.playing) .topbar {
+  border-bottom-color: #e8eed229;
+  box-shadow: 0 8px 24px #03100b18;
+}
+
+body:not(.playing) .topbar .live {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Keep the existing compact landscape structure; only tighten spacing. */
+@media (orientation: landscape) and (max-height: 500px) {
+  body:not(.playing) #welcome #entry-title {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+  }
+
+  body:not(.playing) #welcome .entry-card > .entry-scroll > .muted {
+    margin-bottom: 16px;
+  }
+}
+
+body:not(.playing) #welcome .side-name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* Team and preview precede entry; character customization follows it. */
+body:not(.playing) #welcome {
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 18px 28px;
+}
+
+body:not(.playing) #welcome > .entry-launch {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(190px, 1fr) minmax(200px, 0.85fr);
+  align-items: center;
+  gap: 24px;
+  padding: 22px 26px;
+  border: 1px solid #d2e4c238;
+  border-radius: 20px;
+  background: var(--entry-surface);
+  box-shadow: 0 12px 36px #04160d30;
+}
+
+body:not(.playing) #welcome .entry-launch-copy .eyebrow {
+  margin: 0 0 8px;
+  color: #ecd680;
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+}
+
+body:not(.playing) #welcome #entry-launch-title {
+  margin: 0 0 8px;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+body:not(.playing) #welcome .entry-launch-copy > p:last-child {
+  max-width: 38ch;
+  margin: 0;
+  color: var(--entry-secondary);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+body:not(.playing) #welcome .entry-launch-fields {
+  min-width: 0;
+}
+
+body:not(.playing) #welcome .entry-launch-fields .nick-hint {
+  margin: 8px 0 0;
+  font-size: 0.6875rem;
+}
+
+body:not(.playing) #welcome .entry-launch .entry-actions {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+body:not(.playing) #welcome .entry-launch #join {
+  width: 100%;
+  min-height: 52px;
+  margin: 0;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 5px 18px #ecd68020;
+}
+
+/* O rótulo é atualizado durante o carregamento. No WebKit, atingir seu texto
+   recriado entre pointerdown e pointerup pode cancelar o clique nativo. */
+body:not(.playing) #welcome #join * {
+  pointer-events: none;
+}
+
+body:not(.playing) #welcome .entry-launch .spectate-entry {
+  margin: 0;
+  padding: 4px;
+}
+
+body:not(.playing) #welcome .entry-launch .load-status {
+  margin: 0;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+body:not(.playing) #welcome > .team-selector {
+  grid-row: 2;
+}
+
+body:not(.playing) #welcome > :is(.avatar-stage, .entry-card) {
+  grid-row: 3;
+}
+
+body:not(.playing) #welcome > .entry-card {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+@media (max-width: 1000px) {
+  body:not(.playing) #welcome > .entry-launch {
+    grid-template-columns: minmax(0, 1fr) minmax(190px, 1fr);
+    gap: 16px;
+    padding: 18px;
+  }
+
+  body:not(.playing) #welcome .entry-launch-copy {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) and (orientation: portrait) {
+  body:not(.playing) #welcome > .entry-launch {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 18px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  body:not(.playing) #welcome #entry-launch-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body:not(.playing) #welcome {
+    grid-template-rows: auto auto minmax(220px, 1fr);
+    overflow-y: auto;
+    gap: 12px;
+  }
+
+  body:not(.playing) #welcome > .entry-launch {
+    grid-template-columns: minmax(0, 1fr) minmax(160px, 1fr) minmax(180px, 1fr);
+    gap: 14px;
+    padding: 14px 18px;
+  }
+
+  body:not(.playing) #welcome .entry-launch-copy {
+    grid-column: auto;
+  }
+
+  body:not(.playing) #welcome .entry-launch-copy > p:last-child {
+    display: none;
+  }
+}
+
+/* One primary action; customization uses quieter surfaces and visible selection. */
+body:not(.playing).side-left #welcome {
+  --entry-secondary: #ead8d5;
+  --entry-tertiary: #d8bdb9;
+  --entry-surface: #32171c;
+}
+
+body:not(.playing).side-missao #welcome {
+  --entry-secondary: #e4dec6;
+  --entry-tertiary: #cec5a4;
+  --entry-surface: #292513;
+}
+
+body:not(.playing) #welcome .stage-heading h2 {
+  max-width: 15ch;
+  margin: 12px 0 10px;
+  font-size: clamp(1.375rem, 2.2vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+body:not(.playing) #welcome .entry-launch :is(.input-label, input) {
+  font-size: 1rem;
+}
+
+body:not(.playing) #welcome .entry-launch .input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+body:not(.playing) #welcome .entry-launch input {
+  min-height: 48px;
+}
+
+body:not(.playing) #welcome .entry-launch .spectate-entry {
+  min-height: 44px;
+  color: var(--entry-secondary);
+  font-size: 0.8125rem;
+  border-radius: 10px;
+}
+
+body:not(.playing) #welcome .entry-launch .spectate-entry:hover:enabled {
+  background: #ffffff0d;
+  color: #fff;
+}
+
+body:not(.playing) #welcome .team-selector {
+  min-width: 0;
+}
+
+body:not(.playing) #welcome .team-selector > .eyebrow {
+  color: var(--entry-tertiary);
+  margin-bottom: 8px;
+}
+
+body:not(.playing) #welcome .team-selector .side {
+  border-radius: 14px;
+  min-height: 76px;
+}
+
+body:not(.playing) #welcome .entry-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #a5b69a70 transparent;
+}
+
+body:not(.playing) #welcome .entry-card .character-name {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+body:not(.playing) #welcome .entry-card .appearance-grid label {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--entry-secondary);
+}
+
+body:not(.playing) #welcome .entry-legal a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 3px;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 760px) and (orientation: portrait) {
+  body:not(.playing) #welcome {
+    max-width: 560px;
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  body:not(.playing) #welcome .stage-heading h2 {
+    font-size: 1.5rem;
+    margin-top: 8px;
+  }
+
+  body:not(.playing) #welcome .entry-scroll {
+    padding: 20px 18px 12px;
+  }
+}
+
+/* Short landscape viewports also occur when a mobile keyboard is open.
+   Fixed field/action minimums must not push the launch button out of view. */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 600px) {
+  body:not(.playing) #welcome > .entry-launch {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body:not(.playing) #welcome .entry-launch-copy {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 420px) {
+  body:not(.playing) #welcome > .entry-launch {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:not(.playing) #welcome *,
+  body:not(.playing) #welcome *::before,
+  body:not(.playing) #welcome *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Optional account access follows the launch controls in reading order. */
+body:not(.playing) #welcome .entry-launch > .account-box {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 14px 0 0;
+  border: 0;
+  border-top: 1px solid #d2e4c229;
+  border-radius: 0;
+  background: transparent;
+}
+
+body:not(.playing) #welcome .entry-launch .account-info {
+  min-width: 0;
+}
+
+body:not(.playing) #welcome .entry-launch .account-info > span {
+  color: var(--entry-tertiary);
+  line-height: 1.5;
+}
+
+body:not(.playing) #welcome .entry-launch .account-open {
+  flex-shrink: 0;
+}
+
+/* Follow the same reading order visually and with keyboard/assistive tools. */
+body:not(.playing) #welcome {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto auto;
+  height: 100svh;
+  min-height: 100svh;
+  max-width: 1100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body:not(.playing) #welcome > .team-selector {
+  grid-row: 1;
+}
+
+body:not(.playing) #welcome > .avatar-stage {
+  grid-column: 1;
+  grid-row: 2;
+  height: 360px;
+  min-height: 260px;
+}
+
+body:not(.playing) #welcome > .entry-launch {
+  grid-row: 3;
+}
+
+body:not(.playing) #welcome > .entry-card {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+body:not(.playing) #welcome > .entry-card,
+body:not(.playing) #welcome .entry-scroll {
+  overflow: visible;
+}
+
+@media (max-width: 760px) and (orientation: portrait) {
+  body:not(.playing) #welcome {
+    height: 100svh;
+    overflow-y: auto;
+    max-width: 560px;
+  }
+
+  body:not(.playing) #welcome > .avatar-stage {
+    height: 36svh;
+    min-height: 230px;
+  }
+}
+
+/* Zoom and the software keyboard can leave a narrow landscape viewport.
+   The landscape heading must not squeeze team names into one-letter columns. */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 600px) {
+  body:not(.playing) #welcome > .team-selector {
+    display: block;
+  }
+
+  body:not(.playing) #welcome .team-selector #team-title {
+    margin-bottom: 12px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 420px) {
+  body:not(.playing) #welcome .team-selector .sides {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

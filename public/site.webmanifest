@@ -1,0 +1,16 @@
+{
+  "name": "Brasília Livre",
+  "short_name": "Brasília Livre",
+  "description": "A manifestação online no Eixo Monumental. Jogue grátis no navegador e personalize seu personagem com pontos do jogo.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#161a1f",
+  "background_color": "#161a1f",
+  "icons": [
+    { "src": "icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

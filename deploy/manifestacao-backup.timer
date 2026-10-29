@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup diário do Manifestacao
+
+[Timer]
+OnCalendar=*-*-* 04:40:00 America/Sao_Paulo
+RandomizedDelaySec=15m
+Persistent=true
+Unit=manifestacao-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,393 @@
+{
+  "geography": "© OpenStreetMap contributors, ODbL 1.0",
+  "geographyUrl": "https://www.openstreetmap.org/copyright",
+  "photographs": "Research references only; no source photographs distributed as textures",
+  "materials": {
+    "source": "Poly Haven",
+    "license": "CC0",
+    "url": "https://polyhaven.com",
+    "assets": [
+      "grass_ground",
+      "clean_asphalt",
+      "marble_01",
+      "granite_tile",
+      "wood_floor",
+      "concrete_wall_008",
+      "granite_wall"
+    ]
+  },
+  "lighting": {
+    "asset": "kiara_5_noon",
+    "artist": "Greg Zaal",
+    "license": "CC0",
+    "url": "https://polyhaven.com/a/kiara_5_noon"
+  },
+  "decoder": {
+    "library": "Draco",
+    "license": "Apache-2.0",
+    "url": "https://github.com/google/draco",
+    "threeIntegration": "Three.js r180, MIT",
+    "licenseFiles": [
+      "draco-r180/DRACO-LICENSE.txt",
+      "draco-r180/LICENSE"
+    ]
+  },
+  "interiors": {
+    "stf": {
+      "architecture": "IPHAN inventory (2013), reproduced in Máximo, UnB (2021)",
+      "plans": "https://repositorio.unb.br/handle/10482/43019",
+      "structure": "https://repositorio.unb.br/handle/10482/49740",
+      "museumTour": "https://my.matterport.com/show/?m=wDtoPz9cVFB",
+      "artworks": "Sculptural reconstructions inspired by publicly documented originals; historical facts and authors credited in in-game collection labels."
+    }
+  },
+  "references": [
+    {
+      "asset": "planalto",
+      "title": "File:PalaciodoplanaltoFR.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:PalaciodoplanaltoFR.jpg",
+      "artist": "Dasfour2022",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "planalto",
+      "title": "File:Palácio do Planalto em 2020.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_do_Planalto_em_2020.jpg",
+      "artist": "Senado Federal",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "planalto",
+      "title": "File:Reflexos do Planalto.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Reflexos_do_Planalto.jpg",
+      "artist": "Jonas Richter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "congresso",
+      "title": "File:Brasilia Eixo Monumental Nat Congress Ministries from TV Tower.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Brasilia_Eixo_Monumental_Nat_Congress_Ministries_from_TV_Tower.jpg",
+      "artist": "Cayambe",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "congresso",
+      "title": "File:Brasilia National Congress Buildings.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Brasilia_National_Congress_Buildings.jpg",
+      "artist": "Cayambe",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "congresso",
+      "title": "File:Brazilian National Congress.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Brazilian_National_Congress.jpg",
+      "artist": "Eurico Zimbres",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "asset": "stf",
+      "title": "File:Supreme Federal Court - Statue.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Supreme_Federal_Court_-_Statue.jpg",
+      "artist": "Dasfour2022",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "stf",
+      "title": "File:Supremo Tribunal Federal (1).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Supremo_Tribunal_Federal_(1).jpg",
+      "artist": "Jorge Luiz Castro",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "stf",
+      "title": "File:Supremo Tribunal Federal por Henrique Goldenstein (01).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Supremo_Tribunal_Federal_por_Henrique_Goldenstein_(01).jpg",
+      "artist": "Falcão Alado",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "itamaraty",
+      "title": "File:Palácio do Itamaraty, Brasília, Brasil.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_do_Itamaraty,_Bras%C3%ADlia,_Brasil.jpg",
+      "artist": "Lou Fernando",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "itamaraty",
+      "title": "File:Palácio do Itamaraty 6.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_do_Itamaraty_6.jpg",
+      "artist": "Fwsbsb",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "itamaraty",
+      "title": "File:Surrealista, Palácio do Itamaraty, Brasília, Brasil.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Surrealista,_Pal%C3%A1cio_do_Itamaraty,_Bras%C3%ADlia,_Brasil.jpg",
+      "artist": "Lou Fernando",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "justica",
+      "title": "File:Palacio da Justiça.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Palacio_da_Justi%C3%A7a.jpg",
+      "artist": "Jorge Luiz Castro",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "justica",
+      "title": "File:Palácio do Justiça reflecao.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_do_Justi%C3%A7a_reflecao.jpg",
+      "artist": "Dasfour2022",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "catedral",
+      "title": "File:Brasilia, Cathedral of Brasilia (15309099334).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Brasilia,_Cathedral_of_Brasilia_(15309099334).jpg",
+      "artist": "Arian Zwegers from Brussels, Belgium",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "catedral",
+      "title": "File:Cathedral Brasilia Niemeyer.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Cathedral_Brasilia_Niemeyer.JPG",
+      "artist": "Ugkoeln at de.wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "catedral",
+      "title": "File:Cathedral of Brasília exterior 2007.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Cathedral_of_Bras%C3%ADlia_exterior_2007.jpg",
+      "artist": "Florian Knorn",
+      "license": "CC BY 3.0"
+    },
+    {
+      "asset": "museu",
+      "title": "File:Brasília Museu Nacional Honestino Guimarães.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Bras%C3%ADlia_Museu_Nacional_Honestino_Guimar%C3%A3es.jpg",
+      "artist": "Cayambe",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "museu",
+      "title": "File:Museu Nacional, Brasilia 05 2007.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_Nacional,_Brasilia_05_2007.jpg",
+      "artist": "Mario Roberto Duran Ortiz",
+      "license": "Public domain"
+    },
+    {
+      "asset": "museu",
+      "title": "File:Museu da República 1 edit.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_da_Rep%C3%BAblica_1_edit.jpg",
+      "artist": "Fwsbsb",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "biblioteca",
+      "title": "File:Biblioteca Nacional de Brasília.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Biblioteca_Nacional_de_Bras%C3%ADlia.jpg",
+      "artist": "Eduardo Coutinho",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "asset": "biblioteca",
+      "title": "File:Biblioteca Nacional de Brasília (5842224818).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Biblioteca_Nacional_de_Bras%C3%ADlia_(5842224818).jpg",
+      "artist": "Leandro Neumann Ciuffo",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "biblioteca",
+      "title": "File:Biblioteca Nacional de Brasília rod.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Biblioteca_Nacional_de_Bras%C3%ADlia_rod.jpg",
+      "artist": "Luis Dantas",
+      "license": "Public domain"
+    },
+    {
+      "asset": "panteao",
+      "title": "File:Panteão da Pátria Tancredo Neves.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pante%C3%A3o_da_P%C3%A1tria_Tancredo_Neves.jpg",
+      "artist": "Gustavo",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "asset": "panteao",
+      "title": "File:Panteão da Pátria e da Liberdade Tancredo Neves - DSC00280.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Pante%C3%A3o_da_P%C3%A1tria_e_da_Liberdade_Tancredo_Neves_-_DSC00280.JPG",
+      "artist": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "asset": "panteao",
+      "title": "File:Panteão da Pátria e da Liberdade Tancredo Neves - DSC00281.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Pante%C3%A3o_da_P%C3%A1tria_e_da_Liberdade_Tancredo_Neves_-_DSC00281.JPG",
+      "artist": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "asset": "lucio-costa",
+      "title": "File:Brasilia - Model.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Brasilia_-_Model.JPG",
+      "artist": "Uri Rosenheck (User:R.uri; he:משתמש:אורי ר.)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "lucio-costa",
+      "title": "File:Espaço Lúcio Costa museum in Brasília.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Espa%C3%A7o_L%C3%BAcio_Costa_museum_in_Bras%C3%ADlia.jpg",
+      "artist": "Eric Gaba (Sting - fr:Sting)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "candangos",
+      "title": "File:Monumento al Candango.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Monumento_al_Candango.jpg",
+      "artist": "Sculptor: Bruno GiorgiPhotographer: Eduardo Coutinho",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "asset": "candangos",
+      "title": "File:Os Guerreiros (Os Candangos) BSB 08 2005 36.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Os_Guerreiros_(Os_Candangos)_BSB_08_2005_36.jpg",
+      "artist": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "a-justica",
+      "title": "File:A Justiça escultura BSB 08 2005 24v.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:A_Justi%C3%A7a_escultura_BSB_08_2005_24v.jpg",
+      "artist": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "a-justica",
+      "title": "File:Supreme Federal Court - Statue.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Supreme_Federal_Court_-_Statue.jpg",
+      "artist": "Dasfour2022",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "meteoro",
+      "title": "File:Brasilia DF Brasil - O Meteoro de Bruno Giorgi - panoramio.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Brasilia_DF_Brasil_-_O_Meteoro_de_Bruno_Giorgi_-_panoramio.jpg",
+      "artist": "Josue Marinho",
+      "license": "CC BY 3.0"
+    },
+    {
+      "asset": "meteoro",
+      "title": "File:Meteoro - Palácio Itamaraty.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Meteoro_-_Pal%C3%A1cio_Itamaraty.jpg",
+      "artist": "Lou Mendoes",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "rolls-royce",
+      "title": "File:Rolls-Royce Silver Wraith Presidencial 1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Wraith_Presidencial_1.jpg",
+      "artist": "Tereza Sobreira",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "rolls-royce",
+      "title": "File:Rolls-Royce Silver Wraith Presidencial 2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Wraith_Presidencial_2.jpg",
+      "artist": "Tereza Sobreira",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "rolls-royce",
+      "title": "File:Rolls Royce da Presidência (9684133063).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Rolls_Royce_da_Presid%C3%AAncia_(9684133063).jpg",
+      "artist": "Ministério da Defesa",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "casa-cha",
+      "title": "File:Casa de Chá (Praça dos Três Poderes) - Brasília - 20180803150909.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Casa_de_Ch%C3%A1_(Pra%C3%A7a_dos_Tr%C3%AAs_Poderes)_-_Bras%C3%ADlia_-_20180803150909.jpg",
+      "artist": "Sandra Soster",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "casa-cha",
+      "title": "File:Casa de Chá (Praça dos Três Poderes) - Brasília - 20180803151006.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Casa_de_Ch%C3%A1_(Pra%C3%A7a_dos_Tr%C3%AAs_Poderes)_-_Bras%C3%ADlia_-_20180803151006.jpg",
+      "artist": "Sandra Soster",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "oscar-niemeyer",
+      "title": "File:Correios museum museu, AC Central de Fortaleza, Ceará, Brazil 20 Selos.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Correios_museum_museu,_AC_Central_de_Fortaleza,_Cear%C3%A1,_Brazil_20_Selos.jpg",
+      "artist": "Ridiculopathy",
+      "license": "CC0"
+    },
+    {
+      "asset": "oscar-niemeyer",
+      "title": "File:Homologação do tombamento de obras do Niemeyer (35000945232).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Homologa%C3%A7%C3%A3o_do_tombamento_de_obras_do_Niemeyer_(35000945232).jpg",
+      "artist": "Ministério da Cultura",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "oscar-niemeyer",
+      "title": "File:Praça 3 Poderes Brasília panorama-labeled.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_3_Poderes_Bras%C3%ADlia_panorama-labeled.jpg",
+      "artist": "Eric Gaba (Sting - fr:Sting)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "museu-cidade",
+      "title": "File:Museu Histórico de Brasília 1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_Hist%C3%B3rico_de_Bras%C3%ADlia_1.jpg",
+      "artist": "Fwsbsb2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "museu-cidade",
+      "title": "File:Museu Histórico de Brasília 3.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_Hist%C3%B3rico_de_Bras%C3%ADlia_3.jpg",
+      "artist": "Fwsbsb2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "asset": "museu-cidade",
+      "title": "File:Museu da Cidade in Brasília.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_da_Cidade_in_Bras%C3%ADlia.jpg",
+      "artist": "Eric Gaba (Sting - fr:Sting)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "pombal",
+      "title": "File:Dovecote, oscar niemeyer, brasilia april 2006 (501354350).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dovecote,_oscar_niemeyer,_brasilia_april_2006_(501354350).jpg",
+      "artist": "seier+seier",
+      "license": "CC BY 2.0"
+    },
+    {
+      "asset": "pombal",
+      "title": "File:Dovecote by Oscar Niemeyer in Brasília.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dovecote_by_Oscar_Niemeyer_in_Bras%C3%ADlia.jpg",
+      "artist": "Eric Gaba (Sting - fr:Sting)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "pombal",
+      "title": "File:Praça 3 Poderes Brasília panorama-labeled.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_3_Poderes_Bras%C3%ADlia_panorama-labeled.jpg",
+      "artist": "Eric Gaba (Sting - fr:Sting)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "asset": "oscar-niemeyer",
+      "title": "Espaço Oscar Niemeyer facade",
+      "page": "https://www.metropoles.com/janela-indiscreta/gdf-reabre-espaco-dedicado-a-niemeyer-mas-sem-obras-do-arquiteto"
+    }
+  ],
+  "nationalArms": {
+    "title": "Coat of arms of Brazil",
+    "license": "Public domain (official national symbol)",
+    "url": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Brazil.svg",
+    "use": "Vector contours extruded as editable relief in Blender MCP"
+  }
+}

@@ -1,0 +1,1722 @@
+{
+  "createdAt": "2026-10-17T22:33:06.017Z",
+  "bounds": {
+    "minX": -260,
+    "maxX": 260,
+    "minZ": -640,
+    "maxZ": 640
+  },
+  "hashes": {
+    "public/client.js": "2a9b99462c51a2362a0b2553b1bbb8f57c1d0878e7b50be06256cad9291840b2",
+    "public/index.html": "f6362ed896e6c45efdb1bdfa1b332e327483b93ac85dd0122a5796d3731b51a1",
+    "src/simulation.js": "2c35b2aecc742c07fe4f263c81bf7d7d4fe52176766b3b723cc87d655909f62a",
+    "src/world-actions.js": "74f43594d6569aeb293f3d1874af0a623b86802077bc3694ca3bf1c6687d924a",
+    "src/race.js": "74cdc960914477d57d0a62c8cb8a9ec997e8a80f18d945c61f42c99514190de8",
+    "data/media-screens.json": "b5ac52b843542e76b40f7be4a637614633229a6fd115b10e55608a87903ad2fc"
+  },
+  "screens": [
+    {
+      "id": "masp-principal",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Telão principal · MASP",
+      "where": "na fachada de vidro do MASP, de frente para a avenida",
+      "mount": "masp",
+      "x": -24.91,
+      "y": 15.7,
+      "z": -44.61000000000001,
+      "nx": 1,
+      "nz": 0,
+      "w": 25.6,
+      "h": 14.4
+    },
+    {
+      "id": "consolacao-torre",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Torre do Metrô Consolação",
+      "where": "prédio na esquina da Rua Augusta, lado Jardins",
+      "x": 34.67,
+      "y": 38.17,
+      "z": -620.81,
+      "nx": -0.999767842464056,
+      "nz": -0.021546720742759894,
+      "w": 21.81,
+      "h": 12.27,
+      "mount": "facade"
+    },
+    {
+      "id": "augusta-empena",
+      "kind": "large",
+      "aspect": "9:16",
+      "name": "Empena da Rua Augusta",
+      "where": "prédio na esquina da Rua Augusta, lado Bela Vista",
+      "x": -54.21,
+      "y": 27.56,
+      "z": -589.68,
+      "nx": -0.026657190238982827,
+      "nz": -0.9996446339617707,
+      "w": 22,
+      "h": 39.11,
+      "mount": "facade"
+    },
+    {
+      "id": "trianon-fachada",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Fachada junto ao Trianon",
+      "where": "Edifício Baronesa de Arary",
+      "x": 36.92,
+      "y": 16.69,
+      "z": -175.51,
+      "nx": -0.9996144206527183,
+      "nz": -0.027767067240353327,
+      "w": 20.21,
+      "h": 11.37,
+      "mount": "facade"
+    },
+    {
+      "id": "brigadeiro-torre",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Torre do lado Brigadeiro",
+      "where": "Edifício Gazeta",
+      "x": -28.12,
+      "y": 45.55,
+      "z": 611.61,
+      "nx": 0.9944281672235671,
+      "nz": -0.10541641348659739,
+      "w": 27.06,
+      "h": 15.22,
+      "mount": "facade"
+    },
+    {
+      "id": "haddock-lobo",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Haddock Lobo",
+      "where": "Edifício São Luís Gonzaga",
+      "x": -49.34,
+      "y": 19.73,
+      "z": -733.97,
+      "nx": 0.03555063591768663,
+      "nz": 0.9993678763527714,
+      "w": 23.92,
+      "h": 13.45,
+      "mount": "facade"
+    },
+    {
+      "id": "bela-cintra",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Bela Cintra",
+      "where": "Av. Paulista, 2416",
+      "x": -44.2,
+      "y": 20.94,
+      "z": -861.75,
+      "nx": 0.006756602526353338,
+      "nz": 0.9999771739006351,
+      "w": 28.2,
+      "h": 15.86,
+      "mount": "facade"
+    },
+    {
+      "id": "frei-caneca",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Esquina da Rua Frei Caneca",
+      "where": "Av. Paulista, 2006",
+      "x": -49.1,
+      "y": 18.66,
+      "z": -437.07,
+      "nx": 0.0113629027288277,
+      "nz": 0.9999354401367997,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "peixoto-gomide",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Peixoto Gomide",
+      "where": "Edifício Baronesa de Arary",
+      "x": 59.71,
+      "y": 19.38,
+      "z": -164.67,
+      "nx": 0.01541666980746425,
+      "nz": 0.9998811560840856,
+      "w": 44.01,
+      "h": 24.75,
+      "mount": "facade"
+    },
+    {
+      "id": "pamplona",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Pamplona",
+      "where": "prédio na esquina da Rua Pamplona, lado Jardins",
+      "x": 63.05,
+      "y": 10.4,
+      "z": 311.82,
+      "nx": 0,
+      "nz": -1,
+      "w": 12.1,
+      "h": 6.81,
+      "mount": "facade"
+    },
+    {
+      "id": "campinas",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Esquina da Alameda Campinas",
+      "where": "prédio na esquina da Alameda Campinas, lado Bela Vista",
+      "x": -62.69,
+      "y": 18.66,
+      "z": 521.37,
+      "nx": 0.019476824194832907,
+      "nz": -0.9998103086682412,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "rocha-azevedo",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Alameda Ministro Rocha Azevedo",
+      "where": "prédio na esquina da Alameda Ministro Rocha Azevedo, lado Bela Vista",
+      "x": -60.09,
+      "y": 16.06,
+      "z": -301.57,
+      "nx": 0.020828813681835326,
+      "nz": 0.9997830567281121,
+      "w": 32.21,
+      "h": 18.12,
+      "mount": "facade"
+    },
+    {
+      "id": "joaquim-eugenio",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Alameda Joaquim Eugênio de Lima",
+      "where": "prédio na esquina da Alameda Joaquim Eugênio de Lima, lado Bela Vista",
+      "x": -62.07,
+      "y": 21.08,
+      "z": 680.46,
+      "nx": 0.9995532845767819,
+      "nz": 0.029886975286348892,
+      "w": 28.71,
+      "h": 16.15,
+      "mount": "facade"
+    },
+    {
+      "id": "fiesp-galeria",
+      "kind": "large",
+      "aspect": "9:16",
+      "name": "Fachada de LED do lado da FIESP",
+      "where": "Edifício da FIESP (Av. Paulista, 1313)",
+      "x": 55.63,
+      "y": 31.42,
+      "z": 239.91,
+      "nx": -1,
+      "nz": 0,
+      "w": 17.6,
+      "h": 31.28,
+      "mount": "facade"
+    },
+    {
+      "id": "perto-pamplona-alto",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Av. Paulista perto da Rua Pamplona (alto)",
+      "where": "prédio perto da Rua Pamplona, lado Bela Vista",
+      "x": -52.77,
+      "y": 24.75,
+      "z": 239.95,
+      "nx": 0.9928137823201274,
+      "nz": 0.11966951840465831,
+      "w": 21.16,
+      "h": 11.9,
+      "mount": "facade"
+    },
+    {
+      "id": "pamplona-jardins",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Rua Pamplona, lado Jardins",
+      "where": "prédio na esquina da Rua Pamplona, lado Jardins",
+      "x": 55.27,
+      "y": 18.18,
+      "z": 325.63,
+      "nx": -0.9988342853968664,
+      "nz": -0.04827080189650267,
+      "w": 25.53,
+      "h": 14.36,
+      "mount": "facade"
+    },
+    {
+      "id": "torre-matarazzo",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Torre Matarazzo",
+      "where": "Torre Matarazzo",
+      "x": -65.07,
+      "y": 35.54,
+      "z": 350.39,
+      "nx": 0.9996944704743794,
+      "nz": -0.024717720423817206,
+      "w": 35.01,
+      "h": 19.69,
+      "mount": "facade"
+    },
+    {
+      "id": "campinas-jardins",
+      "kind": "large",
+      "aspect": "16:9",
+      "name": "Alameda Campinas, lado Jardins",
+      "where": "prédio na esquina da Alameda Campinas, lado Jardins",
+      "x": 39.72,
+      "y": 42.47,
+      "z": 540.01,
+      "nx": -0.9995076935144179,
+      "nz": 0.03137468096233602,
+      "w": 43.22,
+      "h": 24.31,
+      "mount": "facade"
+    },
+    {
+      "id": "augusta-bela-vista",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Esquina da Rua Augusta, lado Bela Vista",
+      "where": "prédio na esquina da Rua Augusta, lado Bela Vista",
+      "x": -41.45,
+      "y": 18.66,
+      "z": -612.12,
+      "nx": 0.012269015126399576,
+      "nz": 0.9999247328013383,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "augusta-jardins-alto",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Esquina da Rua Augusta, lado Jardins (alto)",
+      "where": "prédio na esquina da Rua Augusta, lado Jardins",
+      "x": 52,
+      "y": 18.66,
+      "z": -608.97,
+      "nx": 0.008720598617936903,
+      "nz": 0.9999619748569166,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-barao-de-itatiaya",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Edifício Barão de Itatiaya",
+      "where": "Edifício Barão de Itatiaya",
+      "x": 53,
+      "y": 18.66,
+      "z": -455.13,
+      "nx": -0.011847509665810994,
+      "nz": -0.9999298157944478,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "paulista-1804-alto",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Av. Paulista, 1804 (alto)",
+      "where": "Av. Paulista, 1804",
+      "x": -45.37,
+      "y": 11.98,
+      "z": -263.25,
+      "nx": 0.9999862945171208,
+      "nz": -0.00523553033778567,
+      "w": 17.7,
+      "h": 9.96,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-ourinvest",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Edifício Ourinvest",
+      "where": "Edifício Ourinvest",
+      "x": -47.1,
+      "y": 18.66,
+      "z": -168.47,
+      "nx": 0.007246186565546645,
+      "nz": 0.9999737460454937,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-paulista-corporate-alto",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Edifício Paulista Corporate (alto)",
+      "where": "Edifício Paulista Corporate",
+      "x": -47.49,
+      "y": 18.66,
+      "z": -83.72,
+      "nx": 0.029399051601893142,
+      "nz": 0.9995677544643529,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "itapeva-bela-vista-baixo",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Itapeva, lado Bela Vista (baixo)",
+      "where": "prédio na esquina da Rua Itapeva, lado Bela Vista",
+      "x": -36.21,
+      "y": 17.75,
+      "z": 93.27,
+      "nx": 0.9996144206527182,
+      "nz": -0.027767067240353147,
+      "w": 38.22,
+      "h": 21.5,
+      "mount": "facade"
+    },
+    {
+      "id": "itapeva-jardins",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Itapeva, lado Jardins",
+      "where": "prédio na esquina da Rua Itapeva, lado Jardins",
+      "x": 46.32,
+      "y": 11.34,
+      "z": 98.7,
+      "nx": -1,
+      "nz": 0,
+      "w": 15.4,
+      "h": 8.66,
+      "mount": "facade"
+    },
+    {
+      "id": "itapeva-bela-vista-alto",
+      "kind": "medium",
+      "aspect": "9:16",
+      "name": "Esquina da Rua Itapeva, lado Bela Vista (alto)",
+      "where": "prédio na esquina da Rua Itapeva, lado Bela Vista",
+      "x": -52.25,
+      "y": 18.66,
+      "z": 113.33,
+      "nx": -0.009645853482377417,
+      "nz": 0.9999534776731348,
+      "w": 12,
+      "h": 21.33,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-pauliceia",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Edifício Pauliceia",
+      "where": "Edifício Pauliceia",
+      "x": -54.42,
+      "y": 18.84,
+      "z": 569.48,
+      "nx": 0.9979253089684582,
+      "nz": -0.06438227799796502,
+      "w": 42.09,
+      "h": 23.68,
+      "mount": "facade"
+    },
+    {
+      "id": "augusta-jardins-baixo",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Esquina da Rua Augusta, lado Jardins (baixo)",
+      "where": "prédio na esquina da Rua Augusta, lado Jardins",
+      "x": 34.67,
+      "y": 24.4,
+      "z": -620.81,
+      "nx": -0.999767842464056,
+      "nz": -0.021546720742759894,
+      "w": 21.81,
+      "h": 12.27,
+      "mount": "facade"
+    },
+    {
+      "id": "perto-augusta",
+      "kind": "small",
+      "aspect": "9:16",
+      "name": "Av. Paulista perto da Rua Augusta",
+      "where": "prédio perto da Rua Augusta, lado Bela Vista",
+      "x": -35.82,
+      "y": 9.35,
+      "z": -543.57,
+      "nx": 0.9978266147157042,
+      "nz": 0.06589421040575384,
+      "w": 4.89,
+      "h": 8.7,
+      "mount": "facade"
+    },
+    {
+      "id": "paulista-2006",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Av. Paulista, 2006",
+      "where": "Av. Paulista, 2006",
+      "x": -35.77,
+      "y": 9.48,
+      "z": -445.56,
+      "nx": 0.9995059239414208,
+      "nz": -0.031431003897529,
+      "w": 14.51,
+      "h": 8.16,
+      "mount": "facade"
+    },
+    {
+      "id": "frei-caneca-jardins",
+      "kind": "small",
+      "aspect": "9:16",
+      "name": "Rua Frei Caneca, lado Jardins",
+      "where": "prédio na esquina da Rua Frei Caneca, lado Jardins",
+      "x": 49.77,
+      "y": 12.56,
+      "z": -399.02,
+      "nx": -0.9971137319461708,
+      "nz": 0.07592236537661204,
+      "w": 8.5,
+      "h": 15.11,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-funcef-center",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Edifício Funcef Center",
+      "where": "Edifício Funcef Center",
+      "x": -35.53,
+      "y": 7.79,
+      "z": -367.17,
+      "nx": 0.9793983476900752,
+      "nz": 0.20193780364743724,
+      "w": 8.5,
+      "h": 4.78,
+      "mount": "facade"
+    },
+    {
+      "id": "paulista-1804-baixo",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Av. Paulista, 1804 (baixo)",
+      "where": "Av. Paulista, 1804",
+      "x": -69.15,
+      "y": 12.29,
+      "z": -278.43,
+      "nx": -0.011582234637113822,
+      "nz": -0.9999329236707885,
+      "w": 24.5,
+      "h": 13.78,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-scarpa",
+      "kind": "small",
+      "aspect": "9:16",
+      "name": "Edifício Scarpa",
+      "where": "Edifício Scarpa",
+      "x": 55.37,
+      "y": 9.59,
+      "z": -224.9,
+      "nx": -0.9905498667663627,
+      "nz": -0.1371530584753434,
+      "w": 5.16,
+      "h": 9.18,
+      "mount": "facade"
+    },
+    {
+      "id": "paulista-768",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Av. Paulista, 768",
+      "where": "Av. Paulista, 768",
+      "x": -62.17,
+      "y": 9.73,
+      "z": -180.59,
+      "nx": 0.9995574085167952,
+      "nz": 0.02974873239633317,
+      "w": 15.41,
+      "h": 8.67,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-paulista-corporate-baixo",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Edifício Paulista Corporate (baixo)",
+      "where": "Edifício Paulista Corporate",
+      "x": -35.92,
+      "y": 9.37,
+      "z": -92.1,
+      "nx": 0.9986707093363721,
+      "nz": 0.05154429467542548,
+      "w": 14.12,
+      "h": 7.94,
+      "mount": "facade"
+    },
+    {
+      "id": "casa-branca",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Esquina da Alameda Casa Branca",
+      "where": "prédio na esquina da Alameda Casa Branca, lado Jardins",
+      "x": 31.69,
+      "y": 7.81,
+      "z": 42.38,
+      "nx": -0.9998186434515374,
+      "nz": -0.01904416463717241,
+      "w": 19.6,
+      "h": 11.03,
+      "mount": "facade"
+    },
+    {
+      "id": "perto-pamplona-baixo",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Av. Paulista perto da Rua Pamplona (baixo)",
+      "where": "prédio perto da Rua Pamplona, lado Bela Vista",
+      "x": -52.77,
+      "y": 11.35,
+      "z": 239.95,
+      "nx": 0.9928137823201274,
+      "nz": 0.11966951840465831,
+      "w": 21.16,
+      "h": 11.9,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-saint-honore",
+      "kind": "small",
+      "aspect": "9:16",
+      "name": "Edifício Saint Honorè",
+      "where": "Edifício Saint Honorè",
+      "x": 62.92,
+      "y": 12.56,
+      "z": 351.62,
+      "nx": -0.9989031743698379,
+      "nz": 0.04682358629858622,
+      "w": 8.5,
+      "h": 15.11,
+      "mount": "facade"
+    },
+    {
+      "id": "paulista-1048",
+      "kind": "small",
+      "aspect": "9:16",
+      "name": "Av. Paulista, 1048",
+      "where": "Av. Paulista, 1048",
+      "x": -63.22,
+      "y": 9.27,
+      "z": 492.63,
+      "nx": -0.04833055142331531,
+      "nz": 0.9988313960820004,
+      "w": 4.81,
+      "h": 8.55,
+      "mount": "facade"
+    },
+    {
+      "id": "campinas-bela-vista",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Alameda Campinas, lado Bela Vista",
+      "where": "prédio na esquina da Alameda Campinas, lado Bela Vista",
+      "x": -53.87,
+      "y": 9.27,
+      "z": 529.41,
+      "nx": 0.995102224607387,
+      "nz": -0.09885121436497206,
+      "w": 13.77,
+      "h": 7.75,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-torre-paulista",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Edifício Torre Paulista",
+      "where": "Edifício Torre Paulista",
+      "x": 69.97,
+      "y": 9.17,
+      "z": 597,
+      "nx": -0.999977173900635,
+      "nz": -0.0067566025263562385,
+      "w": 13.4,
+      "h": 7.54,
+      "mount": "facade"
+    },
+    {
+      "id": "ed-gazeta",
+      "kind": "small",
+      "aspect": "16:9",
+      "name": "Edifício Gazeta",
+      "where": "Edifício Gazeta",
+      "x": -28.12,
+      "y": 28.83,
+      "z": 611.61,
+      "nx": 0.9944281672235671,
+      "nz": -0.10541641348659739,
+      "w": 27.06,
+      "h": 15.22,
+      "mount": "facade"
+    },
+    {
+      "id": "ponto-consolacao",
+      "name": "Ponto de ônibus Consolação",
+      "where": "abrigo de ônibus, lado Jardins",
+      "mount": "shelter",
+      "kind": "small",
+      "aspect": "9:16",
+      "x": 24.175,
+      "y": 1.4255555555555557,
+      "z": -499.96500000000003,
+      "nx": 0,
+      "nz": 1,
+      "w": 1.3,
+      "h": 2.3111111111111113
+    },
+    {
+      "id": "ponto-augusta",
+      "name": "Ponto de ônibus Frei Caneca",
+      "where": "abrigo de ônibus, lado Bela Vista",
+      "mount": "shelter",
+      "kind": "small",
+      "aspect": "9:16",
+      "x": -24.175,
+      "y": 1.4255555555555557,
+      "z": -366.76500000000004,
+      "nx": 0,
+      "nz": 1,
+      "w": 1.3,
+      "h": 2.3111111111111113
+    },
+    {
+      "id": "ponto-trianon",
+      "name": "Ponto de ônibus Trianon",
+      "where": "abrigo de ônibus, lado Jardins",
+      "mount": "shelter",
+      "kind": "small",
+      "aspect": "9:16",
+      "x": 24.175,
+      "y": 1.4255555555555557,
+      "z": -55.665,
+      "nx": 0,
+      "nz": 1,
+      "w": 1.3,
+      "h": 2.3111111111111113
+    },
+    {
+      "id": "ponto-brigadeiro",
+      "name": "Ponto de ônibus Gazeta (sentido Brigadeiro)",
+      "where": "abrigo de ônibus, lado Bela Vista",
+      "mount": "shelter",
+      "kind": "small",
+      "aspect": "9:16",
+      "x": -24.175,
+      "y": 1.4255555555555557,
+      "z": 614.7350000000001,
+      "nx": 0,
+      "nz": 1,
+      "w": 1.3,
+      "h": 2.3111111111111113
+    },
+    {
+      "id": "ponto-rocha-azevedo",
+      "name": "Ponto de ônibus perto da Alameda Ministro Rocha Azevedo",
+      "where": "abrigo de ônibus, lado Bela Vista",
+      "mount": "shelter",
+      "kind": "small",
+      "aspect": "9:16",
+      "x": -24.175,
+      "y": 1.4255555555555557,
+      "z": -233.665,
+      "nx": 0,
+      "nz": 1,
+      "w": 1.3,
+      "h": 2.3111111111111113
+    },
+    {
+      "id": "ponto-itapeva",
+      "name": "Ponto de ônibus perto da Rua Itapeva",
+      "where": "abrigo de ônibus, lado Bela Vista",
+      "mount": "shelter",
+      "kind": "small",
+      "aspect": "9:16",
+      "x": -24.175,
+      "y": 1.4255555555555557,
+      "z": 198.535,
+      "nx": 0,
+      "nz": 1,
+      "w": 1.3,
+      "h": 2.3111111111111113
+    },
+    {
+      "id": "banca-1",
+      "name": "Banca de jornal perto da Rua Padre João Manuel, lado Bela Vista",
+      "where": "banca de jornal, lado Bela Vista",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": -28.2,
+      "y": 4.806875,
+      "z": -449.1,
+      "nx": 1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-2",
+      "name": "Banca de jornal perto da Rua Peixoto Gomide, lado Jardins",
+      "where": "banca de jornal, lado Jardins",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": 28.2,
+      "y": 4.806875,
+      "z": -131.6,
+      "nx": -1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-3",
+      "name": "Banca de jornal perto da Rua Itapeva, lado Jardins",
+      "where": "banca de jornal, lado Jardins",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": 28.2,
+      "y": 4.806875,
+      "z": 159,
+      "nx": -1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-4",
+      "name": "Banca de jornal perto da Alameda Campinas, lado Bela Vista",
+      "where": "banca de jornal, lado Bela Vista",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": -28.2,
+      "y": 4.806875,
+      "z": 478.9,
+      "nx": 1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-5",
+      "name": "Banca de jornal perto da Rua Frei Caneca, lado Bela Vista",
+      "where": "banca de jornal, lado Bela Vista",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": -28.2,
+      "y": 4.806875,
+      "z": -408.8,
+      "nx": 1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-6",
+      "name": "Banca de jornal perto da Alameda Ministro Rocha Azevedo, lado Jardins",
+      "where": "banca de jornal, lado Jardins",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": 28.2,
+      "y": 4.806875,
+      "z": -312.5,
+      "nx": -1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-7",
+      "name": "Banca de jornal perto da Alameda Casa Branca, lado Bela Vista",
+      "where": "banca de jornal, lado Bela Vista",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": -28.2,
+      "y": 4.806875,
+      "z": 49.3,
+      "nx": 1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "banca-8",
+      "name": "Banca de jornal perto da Rua Pamplona, lado Bela Vista",
+      "where": "banca de jornal, lado Bela Vista",
+      "mount": "kiosk",
+      "kind": "small",
+      "aspect": "16:9",
+      "x": -28.2,
+      "y": 4.806875,
+      "z": 361.4,
+      "nx": 1,
+      "nz": 0,
+      "w": 3.9,
+      "h": 2.19375
+    },
+    {
+      "id": "consolacao-torre-galeria",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Torre do Metrô Consolação · Galeria",
+      "where": "prédio na esquina da Rua Augusta, lado Jardins",
+      "x": 34.67,
+      "y": 10.63,
+      "z": -620.81,
+      "nx": -0.999767842464056,
+      "nz": -0.021546720742759894,
+      "w": 21.81,
+      "h": 12.27,
+      "mount": "facade"
+    },
+    {
+      "id": "campinas-jardins-galeria",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Alameda Campinas, lado Jardins · Galeria",
+      "where": "prédio na esquina da Alameda Campinas, lado Jardins",
+      "x": 39.72,
+      "y": 16.66,
+      "z": 540.01,
+      "nx": -0.9995076935144179,
+      "nz": 0.03137468096233602,
+      "w": 43.22,
+      "h": 24.31,
+      "mount": "facade"
+    },
+    {
+      "id": "brigadeiro-torre-galeria",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Torre do lado Brigadeiro · Galeria",
+      "where": "Edifício Gazeta",
+      "x": -28.12,
+      "y": 12.11,
+      "z": 611.61,
+      "nx": 0.9944281672235671,
+      "nz": -0.10541641348659739,
+      "w": 27.06,
+      "h": 15.22,
+      "mount": "facade"
+    },
+    {
+      "id": "torre-matarazzo-galeria",
+      "kind": "medium",
+      "aspect": "16:9",
+      "name": "Torre Matarazzo · Galeria",
+      "where": "Torre Matarazzo",
+      "x": -65.07,
+      "y": 14.35,
+      "z": 350.39,
+      "nx": 0.9996944704743794,
+      "nz": -0.024717720423817206,
+      "w": 35.01,
+      "h": 19.69,
+      "mount": "facade"
+    },
+    {
+      "id": "trianon-outdoor-1",
+      "name": "Parque Trianon · Outdoor 1",
+      "x": 41.11,
+      "z": -125,
+      "w": 20,
+      "h": 11.25,
+      "bottom": 4.5,
+      "nx": -1,
+      "nz": 0,
+      "y": 10.275,
+      "kind": "large",
+      "aspect": "16:9",
+      "mount": "park",
+      "where": "no Parque Trianon, em frente ao MASP"
+    },
+    {
+      "id": "trianon-outdoor-2",
+      "name": "Parque Trianon · Outdoor 2",
+      "x": 41.11,
+      "z": -76,
+      "w": 20,
+      "h": 11.25,
+      "bottom": 4.5,
+      "nx": -1,
+      "nz": 0,
+      "y": 10.275,
+      "kind": "large",
+      "aspect": "16:9",
+      "mount": "park",
+      "where": "no Parque Trianon, em frente ao MASP"
+    },
+    {
+      "id": "trianon-outdoor-3",
+      "name": "Parque Trianon · Outdoor 3",
+      "x": 41.11,
+      "z": -8,
+      "w": 20,
+      "h": 11.25,
+      "bottom": 4.5,
+      "nx": -1,
+      "nz": 0,
+      "y": 10.275,
+      "kind": "large",
+      "aspect": "16:9",
+      "mount": "park",
+      "where": "no Parque Trianon, em frente ao MASP"
+    }
+  ],
+  "places": [
+    {
+      "id": "wind-plant",
+      "name": "Usina de Estocar Vento",
+      "description": "Capture o vento nos tanques e libere uma rajada quando estiverem cheios.",
+      "x": 216,
+      "z": -540,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 178,
+        "z": -540,
+        "w": 46,
+        "d": 4
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 14,
+          "d": 12
+        },
+        {
+          "x": 0,
+          "z": 9,
+          "w": 1.3,
+          "d": 0.65
+        }
+      ],
+      "actions": [
+        {
+          "key": "capture",
+          "label": "Armazenar vento",
+          "x": 0,
+          "z": 11,
+          "radius": 3
+        },
+        {
+          "key": "release",
+          "label": "Liberar a rajada",
+          "x": 0,
+          "z": 11,
+          "radius": 3
+        }
+      ]
+    },
+    {
+      "id": "bottle-factory",
+      "name": "Escola da Mamadeira de Piroca",
+      "description": "Uma fábrica absurda inspirada na fake news eleitoral de 2018. Acione a esteira para produzir mamadeiras.",
+      "x": 216,
+      "z": -420,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": -447,
+        "w": 4,
+        "d": 26
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 14,
+          "d": 10
+        },
+        {
+          "x": -10,
+          "z": -2,
+          "w": 2.4,
+          "d": 2.4
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 12,
+          "d": 2.4
+        }
+      ],
+      "actions": [
+        {
+          "key": "produce",
+          "label": "Ligar a esteira",
+          "x": 0,
+          "z": 11,
+          "radius": 3
+        }
+      ]
+    },
+    {
+      "id": "country-house",
+      "name": "Sítio de Atibaia",
+      "description": "Explore o quintal e encontre documentos, uma pasta e uma chave. Caça aos objetos em um cenário satírico.",
+      "x": 216,
+      "z": -360,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 178,
+        "z": -360,
+        "w": 46,
+        "d": 4
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 12,
+          "d": 9
+        },
+        {
+          "x": -10,
+          "z": 1,
+          "w": 1.3,
+          "d": 1
+        },
+        {
+          "x": 9,
+          "z": -7,
+          "w": 1.3,
+          "d": 1
+        },
+        {
+          "x": 10,
+          "z": 7,
+          "w": 1.3,
+          "d": 1
+        }
+      ],
+      "actions": [
+        {
+          "key": "start-search",
+          "label": "Começar a busca",
+          "x": 0,
+          "z": 7,
+          "radius": 2.5
+        },
+        {
+          "key": "collect-0",
+          "label": "Examinar os documentos",
+          "x": -10,
+          "z": 2.8,
+          "radius": 2
+        },
+        {
+          "key": "collect-1",
+          "label": "Examinar a pasta",
+          "x": 9,
+          "z": -5.2,
+          "radius": 2
+        },
+        {
+          "key": "collect-2",
+          "label": "Pegar a chave",
+          "x": 10,
+          "z": 8.8,
+          "radius": 2
+        }
+      ]
+    },
+    {
+      "id": "triplex",
+      "name": "Triplex do Guarujá",
+      "description": "Escolha um andar e entre no elevador. Ele sempre para em outro andar antes de voltar ao térreo.",
+      "x": 216,
+      "z": -120,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": -143,
+        "w": 4,
+        "d": 22
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -2,
+          "w": 12,
+          "d": 10
+        },
+        {
+          "x": 8.7,
+          "z": 4.5,
+          "w": 0.15,
+          "d": 2.7
+        },
+        {
+          "x": 11.3,
+          "z": 4.5,
+          "w": 0.15,
+          "d": 2.7
+        },
+        {
+          "x": 10,
+          "z": 3.2,
+          "w": 2.7,
+          "d": 0.15
+        }
+      ],
+      "actions": [
+        {
+          "key": "lift-3",
+          "label": "Ir ao 3º andar",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        },
+        {
+          "key": "lift-6",
+          "label": "Ir ao 6º andar",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        },
+        {
+          "key": "lift-9",
+          "label": "Ir ao 9º andar",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        },
+        {
+          "key": "leave-ride",
+          "label": "Sair do elevador",
+          "x": 10,
+          "z": 7.5,
+          "radius": 4
+        }
+      ]
+    },
+    {
+      "id": "temple",
+      "name": "Templo do Imbrochável",
+      "description": "Ative o altar no pátio para receber 10 segundos de invencibilidade. Uma bênção por minuto.",
+      "x": 216,
+      "z": -60,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 178,
+        "z": -60,
+        "w": 46,
+        "d": 4
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 12,
+          "d": 10
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 2.4,
+          "d": 2.4
+        },
+        {
+          "x": -3.9,
+          "z": 5,
+          "w": 0.16,
+          "d": 0.16
+        },
+        {
+          "x": 3.9,
+          "z": 5,
+          "w": 0.16,
+          "d": 0.16
+        }
+      ],
+      "actions": [
+        {
+          "key": "blessing",
+          "label": "Receber a proteção",
+          "x": 0,
+          "z": 10.5,
+          "radius": 2.6
+        }
+      ]
+    },
+    {
+      "id": "alien",
+      "name": "Base do ET Bilu",
+      "description": "Busquem conhecimento: resolva os três enigmas do visitante para ganhar fichas fictícias.",
+      "x": 216,
+      "z": 180,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 153,
+        "w": 4,
+        "d": 54
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -1,
+          "w": 8,
+          "d": 8
+        },
+        {
+          "x": -2,
+          "z": 7,
+          "w": 0.8,
+          "d": 0.5
+        },
+        {
+          "x": 2,
+          "z": 6,
+          "w": 5,
+          "d": 0.15
+        }
+      ],
+      "actions": [
+        {
+          "key": "ask-riddle",
+          "label": "Ouvir os enigmas",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        },
+        {
+          "key": "answer-0",
+          "label": "Resposta 1",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        },
+        {
+          "key": "answer-1",
+          "label": "Resposta 2",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        },
+        {
+          "key": "answer-2",
+          "label": "Resposta 3",
+          "x": -2,
+          "z": 9,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "tire-camp",
+      "name": "Acampamento dos Pneus",
+      "description": "Dois pneus gigantes viraram portais. Viaje até a usina de vento ou a Base do ET Bilu.",
+      "x": 216,
+      "z": 240,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 269,
+        "w": 4,
+        "d": 58
+      },
+      "solid": [
+        {
+          "x": -6,
+          "z": 4,
+          "w": 1.5,
+          "d": 4
+        },
+        {
+          "x": 6,
+          "z": -4,
+          "w": 1.5,
+          "d": 4
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 9,
+          "d": 0.2
+        },
+        {
+          "x": -9,
+          "z": -2,
+          "w": 0.5,
+          "d": 1.1
+        },
+        {
+          "x": -5,
+          "z": -7,
+          "w": 0.5,
+          "d": 1.1
+        },
+        {
+          "x": 7,
+          "z": 8,
+          "w": 0.5,
+          "d": 1.1
+        }
+      ],
+      "actions": [
+        {
+          "key": "travel-north",
+          "label": "Pneu para a usina de vento",
+          "x": -8,
+          "z": 4,
+          "radius": 2.5
+        },
+        {
+          "key": "travel-et",
+          "label": "Pneu para a Base do ET",
+          "x": 8,
+          "z": -4,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "liberty",
+      "name": "Estátua da Liberdade da Havan",
+      "description": "Desperte a estátua e enfrente o boss cooperativo. Aproxime-se para golpear e recue da onda dourada. Só participantes sofrem dano nos HP dos desafios.",
+      "x": 216,
+      "z": 360,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 376,
+        "w": 4,
+        "d": 32
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 8.6,
+          "d": 8.6
+        },
+        {
+          "x": -9,
+          "z": 5,
+          "w": 5,
+          "d": 0.2
+        }
+      ],
+      "actions": [
+        {
+          "key": "wake-boss",
+          "label": "Participar do desafio",
+          "x": 0,
+          "z": 8,
+          "radius": 3
+        },
+        {
+          "key": "strike-boss",
+          "label": "Golpear a estátua",
+          "x": 0,
+          "z": 3.5,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "supermarket",
+      "name": "Supermercado da Picanha e Cerveja",
+      "description": "Encontre a picanha lendária na vitrine do pátio. Ela restaura seus HP dos desafios, uma vez por minuto.",
+      "x": 216,
+      "z": 480,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 493,
+        "w": 4,
+        "d": 26
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 14,
+          "d": 11
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 4,
+          "d": 1.8
+        }
+      ],
+      "actions": [
+        {
+          "key": "eat-picanha",
+          "label": "Comer a picanha lendária",
+          "x": 0,
+          "z": 10.5,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "name": "Banco do Pix",
+      "description": "Cada transferência de uma ficha fictícia ativa um evento aleatório: bônus de fichas, cura, proteção ou confete. Não movimenta dinheiro real.",
+      "x": 216,
+      "z": 540,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": 216,
+        "z": 528,
+        "w": 4,
+        "d": 24
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -3,
+          "w": 11,
+          "d": 12
+        },
+        {
+          "x": 0,
+          "z": 8,
+          "w": 1.5,
+          "d": 1
+        }
+      ],
+      "actions": [
+        {
+          "key": "transfer-token",
+          "label": "Transferir 1 ficha fictícia",
+          "x": 0,
+          "z": 10,
+          "radius": 2.5
+        }
+      ]
+    },
+    {
+      "id": "congress",
+      "name": "Congresso do Centrão",
+      "description": "Use 3 fichas fictícias como emenda para abrir as portas. Explore o pátio e encontre uma recompensa; ninguém fica preso quando o portão fecha.",
+      "x": -216,
+      "z": -420,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": -216,
+        "z": -433,
+        "w": 4,
+        "d": 26
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": -6,
+          "w": 12,
+          "d": 10.4
+        },
+        {
+          "x": -5,
+          "z": 7,
+          "w": 0.2,
+          "d": 8
+        },
+        {
+          "x": 5,
+          "z": 7,
+          "w": 0.2,
+          "d": 8
+        },
+        {
+          "x": 0,
+          "z": 3,
+          "w": 10,
+          "d": 0.2
+        },
+        {
+          "x": -3.1,
+          "z": 11,
+          "w": 3.8,
+          "d": 0.2
+        },
+        {
+          "x": 3.1,
+          "z": 11,
+          "w": 3.8,
+          "d": 0.2
+        },
+        {
+          "x": 0,
+          "z": 6.5,
+          "w": 1.2,
+          "d": 0.8
+        }
+      ],
+      "actions": [
+        {
+          "key": "open-gate",
+          "label": "Abrir com 3 fichas de emenda",
+          "x": 0,
+          "z": 12.8,
+          "radius": 1.5
+        },
+        {
+          "key": "collect-emenda",
+          "label": "Examinar o cofre de emendas",
+          "x": 0,
+          "z": 8.5,
+          "radius": 1.4
+        }
+      ]
+    },
+    {
+      "id": "whale-pool",
+      "name": "Piscina da Baleia",
+      "description": "Uma piscina gigante escondida, uma baleia na superfície e o Bolsonaro dando voltas de jet ski. Aproxime-se da borda para observar.",
+      "x": -220,
+      "z": -360,
+      "w": 70,
+      "d": 60,
+      "alley": {
+        "x": -216,
+        "z": -312,
+        "w": 4,
+        "d": 36
+      },
+      "solid": [
+        {
+          "x": 0,
+          "z": 0,
+          "w": 62,
+          "d": 50
+        },
+        {
+          "x": 22,
+          "z": 27,
+          "w": 8,
+          "d": 0.16
+        }
+      ],
+      "actions": [
+        {
+          "key": "watch-whale",
+          "label": "Ver a baleia de perto",
+          "x": 0,
+          "z": 27,
+          "radius": 4
+        }
+      ]
+    },
+    {
+      "id": "chair-plaza",
+      "name": "Praça da Cadeira",
+      "description": "Acione o lançador mirando com a direção do personagem. Cadeiras voadoras só atingem participantes com PvP ativo; paredes e proteção bloqueiam os golpes.",
+      "x": -216,
+      "z": 180,
+      "w": 30,
+      "d": 28,
+      "alley": {
+        "x": -216,
+        "z": 190,
+        "w": 4,
+        "d": 20
+      },
+      "solid": [
+        {
+          "x": -7,
+          "z": 4,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": 7,
+          "z": 4,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": -7,
+          "z": -5,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": 7,
+          "z": -5,
+          "w": 0.6,
+          "d": 0.6
+        },
+        {
+          "x": 0,
+          "z": -4,
+          "w": 2.8,
+          "d": 2.8
+        },
+        {
+          "x": 3,
+          "z": 8,
+          "w": 1,
+          "d": 0.8
+        },
+        {
+          "x": -4.8,
+          "z": 10,
+          "w": 0.16,
+          "d": 0.16
+        },
+        {
+          "x": 4.8,
+          "z": 10,
+          "w": 0.16,
+          "d": 0.16
+        }
+      ],
+      "actions": [
+        {
+          "key": "launch-chair",
+          "label": "Acionar o lançador de cadeiras",
+          "x": 0,
+          "z": 8,
+          "radius": 2.5
+        }
+      ]
+    }
+  ]
+}

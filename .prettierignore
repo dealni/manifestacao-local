@@ -1,0 +1,14 @@
+# Recursos originais e saídas geradas devem permanecer reproduzíveis.
+node_modules/
+public/assets/
+public/client.js
+public/index.html
+scripts/vendor/
+src/paint-terrain.json
+src/world-data.json
+analysis/
+data/
+package-lock.json
+coverage/
+.artifacts/
+uploads/

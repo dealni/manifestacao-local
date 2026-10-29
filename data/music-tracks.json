@@ -1,0 +1,162 @@
+[
+  {
+    "id": "d11",
+    "team": 0,
+    "title": "Agora é Flávio Bolsonaro · Deyvson Gomes",
+    "file": "audio/selected/d11.mp3",
+    "seconds": 142.78,
+    "source": "https://www.youtube.com/watch?v=A6VSDCtOFGc",
+    "sha256": "2960edccca14cd3ca10f7bc6db7aedd8bd9d3fe85571a6eff8699ff616409166",
+    "bytes": 2856044
+  },
+  {
+    "id": "d12",
+    "team": 0,
+    "title": "Solinho do Fora PT · Quem ficar parado é petista disfarçado",
+    "file": "audio/selected/d12.mp3",
+    "seconds": 147.02,
+    "source": "https://www.youtube.com/watch?v=Ms8G5GvZaTk",
+    "sha256": "9e7aa609e32a79cdd512929c629cc8537bed8a0d1e083b086b78dc8dd45cf0a1",
+    "bytes": 2941004
+  },
+  {
+    "id": "d7",
+    "team": 0,
+    "title": "Olê Olê Alô Petista",
+    "file": "audio/selected/d7.mp3",
+    "seconds": 168.15,
+    "source": "https://www.youtube.com/watch?v=DJIk6ZEGkYQ",
+    "sha256": "ba001eea79e50207fa91de3c1b0aef6f5322753df2631fc83c223f6b62a5bbe3",
+    "bytes": 3363570
+  },
+  {
+    "id": "d13",
+    "team": 0,
+    "title": "Agora é Flávio Bolsonaro · L21 Músicas",
+    "file": "audio/selected/d13.mp3",
+    "seconds": 161.21,
+    "source": "https://www.youtube.com/watch?v=6oC330CKOnE",
+    "sha256": "e2e2b0f01c972c0674776dfd1df6297f0d47fd9ed2d3779fdabcc852a1ce16dc",
+    "bytes": 3224684
+  },
+  {
+    "id": "d6",
+    "team": 0,
+    "title": "Funk do Nikolas Ferreira",
+    "file": "audio/selected/d6.mp3",
+    "seconds": 103.11,
+    "source": "https://www.youtube.com/watch?v=yi78bVWO-8w",
+    "sha256": "c2fec95ef8fd464ae305f1692e42a59f4cdda4ce419c64f304b785de45d52594",
+    "bytes": 2062672
+  },
+  {
+    "id": "d5",
+    "team": 0,
+    "title": "Funk do Bolsonaro",
+    "file": "audio/selected/d5.mp3",
+    "seconds": 168.39,
+    "source": "captura pública incorporada; endereço externo omitido",
+    "sha256": "68c23de7d1976ab60c6fbaed6df4d8c196581a622f03f828fbeb250fbca73c10",
+    "bytes": 2021084
+  },
+  {
+    "id": "d9",
+    "team": 0,
+    "title": "É Bolso, é Bolsonaro",
+    "file": "audio/selected/d9.mp3",
+    "seconds": 204.64,
+    "source": "https://www.youtube.com/watch?v=AmywZPIP8Ks",
+    "sha256": "88615f84d61c9f4661bbca082e0fb32668d084d15b3591740778c196757d4acc",
+    "bytes": 4093431
+  },
+  {
+    "id": "d14",
+    "team": 0,
+    "title": "Vota, vota e confirma 22",
+    "file": "audio/selected/d14.mp3",
+    "seconds": 130.06,
+    "source": "https://www.youtube.com/watch?v=r8j6gT1E6W4",
+    "sha256": "6c4505643ccc5823ec9536a8f1b97696393a59f32665ded4bda23968a0ada085",
+    "bytes": 2601840
+  },
+  {
+    "id": "d8",
+    "team": 0,
+    "title": "O Mito Chegou",
+    "file": "audio/selected/d8.mp3",
+    "seconds": 192.86,
+    "source": "https://www.youtube.com/watch?v=QqQIZlj-pQ4",
+    "sha256": "cc4aec5be8caf2115c4f0a4a6d828a8f0424427ddde6991068ebd00d16bc4913",
+    "bytes": 3857807
+  },
+  {
+    "id": "e6",
+    "team": 1,
+    "title": "Rap do Silva · Lula",
+    "file": "audio/selected/e6.mp3",
+    "seconds": 94.62,
+    "source": "https://www.youtube.com/watch?v=2Z7XjQYNh_8",
+    "sha256": "2a4d215baaff4b7792826c4912fdc142a4b47c0e23ebe6484e7b127fdce6b2c4",
+    "bytes": 1892876
+  },
+  {
+    "id": "e7",
+    "team": 1,
+    "title": "Bora Lula",
+    "file": "audio/selected/e7.mp3",
+    "seconds": 100.7,
+    "source": "https://www.youtube.com/watch?v=u_jmbbB1vlo",
+    "sha256": "41428491f6cb594ccff2d4380024e82ee0bfaa68a8f4e9a7f9b67db0f76b2980",
+    "bytes": 2014607
+  },
+  {
+    "id": "e8",
+    "team": 1,
+    "title": "É Lula É 13",
+    "file": "audio/selected/e8.mp3",
+    "seconds": 123.66,
+    "source": "https://www.youtube.com/watch?v=l7z7N6Ktxpk",
+    "sha256": "6b6e53b27db51bae4273518a188f1a9083b6c1571c6c6b48a6d3df10b1d5586c",
+    "bytes": 2473840
+  },
+  {
+    "id": "e5",
+    "team": 1,
+    "title": "Funk do Lula",
+    "file": "audio/selected/e5.mp3",
+    "seconds": 112.95,
+    "source": "captura pública incorporada; endereço externo omitido",
+    "sha256": "dd2ed49d1fa35a548593d8de36e383497e9df3e243191c3b203f16f79f080a01",
+    "bytes": 1355898
+  },
+  {
+    "id": "e9",
+    "team": 1,
+    "title": "Passinho do Lula",
+    "file": "audio/selected/e9.mp3",
+    "seconds": 130.56,
+    "source": "https://www.youtube.com/watch?v=a-7tMm-QpZs",
+    "sha256": "be451d69a7a6689ccc08e8fbe24be1e943f102ccee7f8108621e4e587b773ce3",
+    "bytes": 2611766
+  },
+  {
+    "id": "e10",
+    "team": 1,
+    "title": "Sem Medo de Ser Feliz",
+    "file": "audio/selected/e10.mp3",
+    "seconds": 188.32,
+    "source": "https://www.youtube.com/watch?v=HSPDV60nGUQ",
+    "sha256": "4b810cfe3e7174a7debc5b2bbaab942296d8873477c3a251637b223be5514fbf",
+    "bytes": 3766901
+  },
+  {
+    "id": "m1",
+    "team": 2,
+    "title": "Vote na Onça",
+    "file": "audio/selected/m1.mp3",
+    "seconds": 160.78,
+    "source": "https://www.youtube.com/watch?v=xjzVba3ljvI",
+    "sha256": "42f0b55d6ec2d7b08eaefac731896a580baba65fd539534278727ec419e95ab7",
+    "bytes": 3216240
+  }
+]

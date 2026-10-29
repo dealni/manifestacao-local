@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#171b1f"/>
+  <path d="M0 575 490 473M0 630 536 473M1200 575 710 473M1200 630 664 473" fill="none" stroke="#2b333b" stroke-width="2"/>
+  <path d="m510 630 76-157h28l76 157Z" fill="#422f2a"/>
+  <rect x="84" y="171" width="7" height="226" rx="3" fill="#edd76a"/>
+  <g fill="#f7f4e9" font-family="DejaVu Sans,Arial,sans-serif">
+    <text x="122" y="247" font-size="76" font-weight="700">BRASÍLIA LIVRE</text>
+    <text x="126" y="308" font-size="32" fill="#edd76a">Uma praça online no Eixo Monumental</text>
+    <text x="126" y="359" font-size="27" fill="#c4c8c3">Converse, personalize seu visual e encontre sua turma.</text>
+    <text x="126" y="416" font-size="27" font-weight="700">manifestacoes.com</text>
+  </g>
+</svg>
